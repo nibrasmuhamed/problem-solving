@@ -11,22 +11,24 @@ type Stack struct {
 	top *Node
 }
 
-func main() {
-	myStack := Stack{}
-	myStack.push(2)
-	myStack.push(5)
-	myStack.push(8)
-	myStack.push(9)
-	myStack.pop()
-	myStack.pop()
-	myStack.Print()
+func (s *Stack) pop() *int {
+	if s.top == nil {
+		return nil
+	}
+	x := s.top
+	s.top = s.top.next
+	return &x.data
 }
 
-func (s *Stack) pop() {
+func (s *Stack) push(data int) {
+	node := new(Node)
+	node.data = data
 	if s.top == nil {
+		s.top = node
 		return
 	}
-	s.top = s.top.next
+	node.next = s.top
+	s.top = node
 }
 
 func (s Stack) Print() {
@@ -40,16 +42,15 @@ func (s Stack) Print() {
 		temp = temp.next
 	}
 	fmt.Println()
-
 }
 
-func (s *Stack) push(data int) {
-	node := new(Node)
-	node.data = data
-	if s.top == nil {
-		s.top = node
-		return
-	}
-	node.next = s.top
-	s.top = node
+func main() {
+	myStack := Stack{}
+	myStack.push(2)
+	myStack.push(5)
+	myStack.push(8)
+	myStack.push(9)
+	myStack.pop()
+	myStack.pop()
+	myStack.Print()
 }
