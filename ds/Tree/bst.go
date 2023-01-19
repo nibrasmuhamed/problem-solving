@@ -25,9 +25,9 @@ func main() {
 	myBst.insert(13)
 	myBst.insertIterative(20)
 
-	myBst.removeNode(5)
-	// myBst.print()
-	fmt.Println(myBst.findClosest(7))
+	myBst.removeNode(10)
+	myBst.print()
+	// fmt.Println(myBst.findClosest(7))
 	// fmt.Println(myBst.find(15))
 	// fmt.Println(myBst.findIterative(15))
 
@@ -95,7 +95,7 @@ func (b *bst) removeHelper(data int, current *Node, parent *Node) {
 					b.root = current.right
 				} else {
 					// single node tree
-					b.root = nil
+					current = nil
 				}
 			} else if current == parent.left {
 				// if node has only single child.

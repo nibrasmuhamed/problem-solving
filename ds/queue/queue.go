@@ -12,10 +12,15 @@ type Queue struct {
 	rear  *Node
 }
 
+func (q *Queue) isEmpty() bool {
+	if q.rear == nil && q.front == nil {
+		return true
+	}
+	return false
+}
+
 func (q *Queue) enqueue(data int) {
 	newNode := &Node{data, nil}
-	// rep := new(Node)
-	// rep.data = 19
 	if q.rear == nil {
 		q.front = newNode
 		q.rear = newNode
@@ -23,6 +28,14 @@ func (q *Queue) enqueue(data int) {
 	}
 	q.rear.next = newNode
 	q.rear = newNode
+}
+
+func (q *Queue) dequeue() {
+	if q.front == nil {
+		fmt.Println("queue empty")
+		return
+	}
+	q.front = q.front.next
 }
 
 func main() {
@@ -33,14 +46,6 @@ func main() {
 	myQueue.enqueue(3)
 	myQueue.dequeue()
 	myQueue.Print()
-}
-
-func (q *Queue) dequeue() {
-	if q.front == nil {
-		fmt.Println("queue empty")
-		return
-	}
-	q.front = q.front.next
 }
 
 func (q Queue) Print() {
