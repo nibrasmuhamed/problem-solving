@@ -48,7 +48,7 @@ func (s Stack) Print() {
 }
 
 func main() {
-	a := []string{"5", "6", "4", "/", "+", "1", "-"}
+	a := []string{"4", "13", "5", "/", "+"}
 	fmt.Println(*usingStack(a))
 }
 
