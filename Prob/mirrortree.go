@@ -13,8 +13,21 @@ func main() {
 	b.root.right.left = &Node{2, nil, nil}
 	b.root.right.left.right = &Node{3, nil, nil}
 	b.root.right.left.right.left = &Node{5, nil, nil}
-	b.Mirror()
+	// b.Mirror()
+	b.MirrorRecursive(b.root)
 	fmt.Println(b.bfs())
+}
+
+func (b *bst) MirrorRecursive(n *Node) {
+	if n == nil {
+		return
+	}
+	temp := n.left
+	n.left = n.right
+	n.right = temp
+
+	b.MirrorRecursive(n.left)
+	b.MirrorRecursive(n.right)
 }
 
 func (b *bst) bfs() []int {
