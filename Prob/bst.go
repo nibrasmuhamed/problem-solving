@@ -126,15 +126,15 @@ func (b *bst) bfs() []int {
 	// temp := b.root
 	x := []int{}
 	q := Queue{}
-	q.enqueue(b.root)
-	for q.isEmpty() {
-		a := q.dequeue()
+	q.Enqueue(b.root)
+	for q.IsEmpty() {
+		a := q.Dequeue()
 		x = append(x, a.data.data)
 		if a.data.left != nil {
-			q.enqueue(a.data.left)
+			q.Enqueue(a.data.left)
 		}
 		if a.data.right != nil {
-			q.enqueue(a.data.right)
+			q.Enqueue(a.data.right)
 		}
 	}
 	return x
