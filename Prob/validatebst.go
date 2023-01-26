@@ -2,6 +2,16 @@ package main
 
 import "fmt"
 
+type bst struct {
+	root *Node
+}
+
+type Node struct {
+	data  int
+	left  *Node
+	right *Node
+}
+
 type QueueNode struct {
 	data *Node
 	next *QueueNode
@@ -10,6 +20,13 @@ type QueueNode struct {
 type Queue struct {
 	front *QueueNode
 	rear  *QueueNode
+}
+
+func findMin(current *Node) int {
+	for current.left != nil {
+		current = current.left
+	}
+	return current.data
 }
 
 func (q Queue) Print() {
@@ -54,68 +71,6 @@ func (q *Queue) Dequeue() *QueueNode {
 	x := q.front
 	q.front = q.front.next
 	return x
-}
-
-type Node struct {
-	data  int
-	left  *Node
-	right *Node
-}
-
-type bst struct {
-	root *Node
-}
-
-func main() {
-	b := &bst{}
-	// b.insert(10)
-	// // b.insert(11)
-	// b.insert(11)
-	// b.insert(12)
-	// b.insert(1)
-	// b.insert(7)
-	b.insertArray([]int{1, 2, 3, 8, 9, 0})
-	fmt.Println(b.bfs())
-}
-
-func (b *bst) insertArray(a []int) {
-	q := Queue{}
-	i := 0
-	if b.root == nil {
-		if len(a) <= 0 {
-			return
-		}
-		node := &Node{a[i], nil, nil}
-		i++
-		b.root = node
-	}
-	q.Enqueue(b.root)
-	for q.IsEmpty() {
-		x := q.Dequeue()
-		if x.data.left == nil {
-			if i <= len(a) {
-				node := &Node{a[i], nil, nil}
-				x.data.left = node
-			}
-			i++
-			if i == len(a) {
-				return
-			}
-		}
-		q.Enqueue(x.data.left)
-		if x.data.right == nil {
-			if i <= len(a) {
-				node := &Node{a[i], nil, nil}
-				x.data.right = node
-			}
-			i++
-			if i == len(a) {
-				return
-			}
-		}
-		q.Enqueue(x.data.right)
-	}
-
 }
 
 func (b *bst) bfs() []int {
@@ -186,32 +141,6 @@ func (b *bst) removeHelper(data int, parent, current *Node) {
 	}
 }
 
-func findMin(current *Node) int {
-	for current.left != nil {
-		current = current.left
-	}
-	return current.data
-}
-
-func (b *bst) find(data int) bool {
-	current := b.root
-	if current.data == data {
-		return true
-	}
-	for current != nil {
-		if current.data == data {
-			return true
-		}
-		if data < current.data {
-			current = current.left
-		} else {
-			current = current.right
-		}
-
-	}
-	return false
-}
-
 func (b *bst) insert(data int) {
 	node := &Node{data, nil, nil}
 	if b.root == nil {
@@ -234,4 +163,47 @@ func (b *bst) insert(data int) {
 			current = current.right
 		}
 	}
+}
+
+func main() {
+	b := new(bst)
+	b.insert(6)
+	b.insert(9)
+	b.insert(3)
+	b.insert(8)
+	b.insert(10)
+	b.insert(2)
+	b.insert(4)
+	b.root.right.right.right = &Node{1, nil, nil}
+	fmt.Println(b.bfs())
+	fmt.Println(b.ValidateBst())
+}
+
+func (b *bst) ValidateBst() bool {
+	if b.root == nil {
+		return false
+	}
+	var valid bool
+	q := new(Queue)
+	q.Enqueue(b.root)
+	for q.IsEmpty() {
+		x := q.Dequeue()
+		if x.data.left != nil {
+			if x.data.data > x.data.left.data {
+				valid = true
+			} else {
+				return false
+			}
+			q.Enqueue(x.data.left)
+		}
+		if x.data.right != nil {
+			if x.data.data < x.data.right.data {
+				valid = true
+			} else {
+				return false
+			}
+			q.Enqueue(x.data.right)
+		}
+	}
+	return valid
 }
