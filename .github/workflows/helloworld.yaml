@@ -14,8 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: HelloWorld
-        run: echo "hello world"
+      - name: Testing
+        run: cd Prob && go test validatebst.go validatebst_test.go
         shell: bash
 
   goodbye:
