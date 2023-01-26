@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 type bst struct {
 	root *Node
@@ -174,9 +177,25 @@ func main() {
 	b.insert(10)
 	b.insert(2)
 	b.insert(4)
-	b.root.right.right.right = &Node{1, nil, nil}
+	// b.root.right.right.right = &Node{1, nil, nil}
 	fmt.Println(b.bfs())
-	fmt.Println(b.ValidateBst())
+	fmt.Println(validatebst(b.root))
+}
+
+func validatebst(n *Node) bool {
+	return validateHelper(n, math.MinInt, math.MaxInt)
+}
+
+func validateHelper(n *Node, min, max int) bool {
+	if n == nil {
+		return true
+	}
+	if n.data < min || n.data > max {
+		return false
+	}
+	isLeftBst := validateHelper(n.left, min, n.data)
+	isRightBst := validateHelper(n.right, n.data, max)
+	return isLeftBst && isRightBst
 }
 
 func (b *bst) ValidateBst() bool {
