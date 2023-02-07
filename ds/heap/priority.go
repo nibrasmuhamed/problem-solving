@@ -7,6 +7,8 @@ type Node struct {
 	priority int
 }
 
+//
+
 type QueueNode struct {
 	data *Node
 	next *QueueNode
