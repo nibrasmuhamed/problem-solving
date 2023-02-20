@@ -190,6 +190,7 @@ func validateHelper(n *Node, min, max int) bool {
 	if n == nil {
 		return true
 	}
+	// math.Max()
 	if n.data < min || n.data > max {
 		return false
 	}
