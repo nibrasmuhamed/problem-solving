@@ -1,0 +1,9 @@
+--kubeconfig=${SNAP_DATA}/credentials/controller.config
+--service-account-private-key-file=${SNAP_DATA}/certs/serviceaccount.key
+--root-ca-file=${SNAP_DATA}/certs/ca.crt
+--cluster-signing-cert-file=${SNAP_DATA}/certs/ca.crt
+--cluster-signing-key-file=${SNAP_DATA}/certs/ca.key
+--use-service-account-credentials
+--leader-elect-lease-duration=60s
+--leader-elect-renew-deadline=30s
+--profiling=false

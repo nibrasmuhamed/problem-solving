@@ -1,0 +1,14 @@
+● snap.microk8s.daemon-cluster-agent.service - Service for snap application microk8s.daemon-cluster-agent
+     Loaded: loaded (/etc/systemd/system/snap.microk8s.daemon-cluster-agent.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sat 2023-11-11 22:52:35 IST; 3 days ago
+   Main PID: 2785181 (run-cluster-age)
+      Tasks: 6 (limit: 4607)
+     Memory: 19.4M
+        CPU: 54.397s
+     CGroup: /system.slice/snap.microk8s.daemon-cluster-agent.service
+             ├─2785181 /bin/bash /snap/microk8s/6114/run-cluster-agent-with-args
+             └─2785333 /snap/microk8s/6114/bin/cluster-agent cluster-agent --bind 0.0.0.0:25000 --keyfile /var/snap/microk8s/6114/certs/server.key --certfile /var/snap/microk8s/6114/certs/server.crt --timeout 240
+
+Nov 11 22:52:35 microk8s-vm systemd[1]: Started Service for snap application microk8s.daemon-cluster-agent.
+Nov 11 22:52:39 microk8s-vm microk8s.daemon-cluster-agent[2785333]: 2023/11/11 22:52:39 Starting cluster agent on https://0.0.0.0:25000
+Nov 11 22:52:39 microk8s-vm microk8s.daemon-cluster-agent[2785333]: 2023/11/11 22:52:39 Starting watch for launch configurations

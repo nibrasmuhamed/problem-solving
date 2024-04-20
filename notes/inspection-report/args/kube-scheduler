@@ -1,0 +1,4 @@
+--kubeconfig=${SNAP_DATA}/credentials/scheduler.config
+--leader-elect-lease-duration=60s
+--leader-elect-renew-deadline=30s
+--profiling=false

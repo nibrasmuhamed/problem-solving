@@ -1,0 +1,61 @@
+Oct 11 15:54:48 microk8s-vm systemd[1]: Started Service for snap application microk8s.daemon-cluster-agent.
+Oct 11 15:54:48 microk8s-vm microk8s.daemon-cluster-agent[2577]: 2023/10/11 15:54:48 Starting cluster agent on https://0.0.0.0:25000
+Oct 11 15:54:48 microk8s-vm microk8s.daemon-cluster-agent[2577]: 2023/10/11 15:54:48 Starting watch for launch configurations
+Oct 11 15:54:54 microk8s-vm microk8s.daemon-cluster-agent[2577]: 2023/10/11 15:54:54 Applying /var/snap/microk8s/common/etc/launcher/install.yaml
+Oct 11 15:55:03 microk8s-vm microk8s.daemon-cluster-agent[3075]: Infer repository core for addon dns
+Oct 11 15:55:03 microk8s-vm microk8s.daemon-cluster-agent[3548]: Enabling DNS
+Oct 11 15:55:03 microk8s-vm microk8s.daemon-cluster-agent[3548]: No valid resolv.conf file could be found
+Oct 11 15:55:03 microk8s-vm microk8s.daemon-cluster-agent[3548]: Falling back to 8.8.8.8 8.8.4.4 as upstream nameservers
+Oct 11 15:55:03 microk8s-vm microk8s.daemon-cluster-agent[3548]: Applying manifest
+Oct 11 15:55:04 microk8s-vm microk8s.daemon-cluster-agent[3570]: serviceaccount/coredns created
+Oct 11 15:55:04 microk8s-vm microk8s.daemon-cluster-agent[3570]: configmap/coredns created
+Oct 11 15:55:04 microk8s-vm microk8s.daemon-cluster-agent[3570]: deployment.apps/coredns created
+Oct 11 15:55:04 microk8s-vm microk8s.daemon-cluster-agent[3570]: service/kube-dns created
+Oct 11 15:55:04 microk8s-vm microk8s.daemon-cluster-agent[3570]: clusterrole.rbac.authorization.k8s.io/coredns created
+Oct 11 15:55:04 microk8s-vm microk8s.daemon-cluster-agent[3570]: clusterrolebinding.rbac.authorization.k8s.io/coredns created
+Oct 11 15:55:09 microk8s-vm sudo[4105]:     root : PWD=/var/snap/microk8s/5896 ; USER=root ; ENV=LD_LIBRARY_PATH=/snap/microk8s/5896/lib:/snap/microk8s/5896/usr/lib:/snap/microk8s/5896/lib/aarch64-linux-gnu:/snap/microk8s/5896/usr/lib/aarch64-linux-gnu ; COMMAND=/snap/microk8s/5896/bin/sed -i s@^--cluster-domain=.*@--cluster-domain=cluster.local@ /var/snap/microk8s/5896/args/kubelet
+Oct 11 15:55:09 microk8s-vm sudo[4105]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Oct 11 15:55:09 microk8s-vm sudo[4105]: pam_unix(sudo:session): session closed for user root
+Oct 11 15:55:09 microk8s-vm sudo[4111]:     root : PWD=/var/snap/microk8s/5896 ; USER=root ; ENV=LD_LIBRARY_PATH=/snap/microk8s/5896/lib:/snap/microk8s/5896/usr/lib:/snap/microk8s/5896/lib/aarch64-linux-gnu:/snap/microk8s/5896/usr/lib/aarch64-linux-gnu ; COMMAND=/snap/microk8s/5896/usr/bin/python3 /snap/microk8s/5896/scripts/wrappers/distributed_op.py update_argument kubelet --cluster-domain cluster.local
+Oct 11 15:55:09 microk8s-vm sudo[4111]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Oct 11 15:55:09 microk8s-vm sudo[4111]: pam_unix(sudo:session): session closed for user root
+Oct 11 15:55:09 microk8s-vm sudo[4135]:     root : PWD=/var/snap/microk8s/5896 ; USER=root ; ENV=LD_LIBRARY_PATH=/snap/microk8s/5896/lib:/snap/microk8s/5896/usr/lib:/snap/microk8s/5896/lib/aarch64-linux-gnu:/snap/microk8s/5896/usr/lib/aarch64-linux-gnu ; COMMAND=/snap/microk8s/5896/bin/sed -i s@^--cluster-dns=.*@--cluster-dns=10.152.183.10@ /var/snap/microk8s/5896/args/kubelet
+Oct 11 15:55:09 microk8s-vm sudo[4135]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Oct 11 15:55:09 microk8s-vm sudo[4135]: pam_unix(sudo:session): session closed for user root
+Oct 11 15:55:09 microk8s-vm sudo[4141]:     root : PWD=/var/snap/microk8s/5896 ; USER=root ; ENV=LD_LIBRARY_PATH=/snap/microk8s/5896/lib:/snap/microk8s/5896/usr/lib:/snap/microk8s/5896/lib/aarch64-linux-gnu:/snap/microk8s/5896/usr/lib/aarch64-linux-gnu ; COMMAND=/snap/microk8s/5896/usr/bin/python3 /snap/microk8s/5896/scripts/wrappers/distributed_op.py update_argument kubelet --cluster-dns 10.152.183.10
+Oct 11 15:55:09 microk8s-vm sudo[4141]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Oct 11 15:55:09 microk8s-vm sudo[4141]: pam_unix(sudo:session): session closed for user root
+Oct 11 15:55:09 microk8s-vm microk8s.daemon-cluster-agent[3548]: DNS is enabled
+Oct 11 15:55:09 microk8s-vm microk8s.daemon-cluster-agent[2577]: 2023/10/11 15:55:09 Successfully applied /var/snap/microk8s/common/etc/launcher/install.yaml
+Oct 19 12:14:41 microk8s-vm systemd[1]: Stopping Service for snap application microk8s.daemon-cluster-agent...
+Oct 19 12:14:41 microk8s-vm systemd[1]: snap.microk8s.daemon-cluster-agent.service: Deactivated successfully.
+Oct 19 12:14:41 microk8s-vm systemd[1]: Stopped Service for snap application microk8s.daemon-cluster-agent.
+Oct 19 12:14:41 microk8s-vm systemd[1]: snap.microk8s.daemon-cluster-agent.service: Consumed 1min 39.739s CPU time.
+Oct 19 12:14:48 microk8s-vm systemd[1]: Started Service for snap application microk8s.daemon-cluster-agent.
+Oct 19 12:14:49 microk8s-vm microk8s.daemon-cluster-agent[3293450]: 2023/10/19 12:14:49 Starting cluster agent on https://0.0.0.0:25000
+Oct 19 12:14:49 microk8s-vm microk8s.daemon-cluster-agent[3293450]: 2023/10/19 12:14:49 Starting watch for launch configurations
+-- Boot 5bc4623b22d948e5a5475800c9e3ac28 --
+Oct 20 12:34:24 microk8s-vm systemd[1]: Started Service for snap application microk8s.daemon-cluster-agent.
+Oct 20 12:34:29 microk8s-vm microk8s.daemon-cluster-agent[931]: 2023/10/20 12:34:28 Starting cluster agent on https://0.0.0.0:25000
+Oct 20 12:34:29 microk8s-vm microk8s.daemon-cluster-agent[931]: 2023/10/20 12:34:28 Starting watch for launch configurations
+Oct 20 12:34:33 microk8s-vm systemd[1]: Stopping Service for snap application microk8s.daemon-cluster-agent...
+Oct 20 12:34:33 microk8s-vm systemd[1]: snap.microk8s.daemon-cluster-agent.service: Deactivated successfully.
+Oct 20 12:34:33 microk8s-vm systemd[1]: Stopped Service for snap application microk8s.daemon-cluster-agent.
+Oct 20 12:34:33 microk8s-vm systemd[1]: Started Service for snap application microk8s.daemon-cluster-agent.
+Oct 20 12:34:33 microk8s-vm microk8s.daemon-cluster-agent[1447]: 2023/10/20 12:34:33 Starting cluster agent on https://0.0.0.0:25000
+Oct 20 12:34:33 microk8s-vm microk8s.daemon-cluster-agent[1447]: 2023/10/20 12:34:33 Starting watch for launch configurations
+Oct 22 13:41:35 microk8s-vm systemd[1]: Stopping Service for snap application microk8s.daemon-cluster-agent...
+Oct 22 13:41:35 microk8s-vm systemd[1]: snap.microk8s.daemon-cluster-agent.service: Deactivated successfully.
+Oct 22 13:41:35 microk8s-vm systemd[1]: Stopped Service for snap application microk8s.daemon-cluster-agent.
+Oct 22 13:41:35 microk8s-vm systemd[1]: snap.microk8s.daemon-cluster-agent.service: Consumed 8.919s CPU time.
+-- Boot 033baa807a4541fa8f6e1919c5e82879 --
+Nov 02 16:11:21 microk8s-vm systemd[1]: Started Service for snap application microk8s.daemon-cluster-agent.
+Nov 02 16:11:25 microk8s-vm microk8s.daemon-cluster-agent[965]: 2023/11/02 16:11:25 Starting cluster agent on https://0.0.0.0:25000
+Nov 02 16:11:25 microk8s-vm microk8s.daemon-cluster-agent[965]: 2023/11/02 16:11:25 Starting watch for launch configurations
+Nov 11 22:52:13 microk8s-vm systemd[1]: Stopping Service for snap application microk8s.daemon-cluster-agent...
+Nov 11 22:52:13 microk8s-vm systemd[1]: snap.microk8s.daemon-cluster-agent.service: Deactivated successfully.
+Nov 11 22:52:13 microk8s-vm systemd[1]: Stopped Service for snap application microk8s.daemon-cluster-agent.
+Nov 11 22:52:13 microk8s-vm systemd[1]: snap.microk8s.daemon-cluster-agent.service: Consumed 2min 3.131s CPU time.
+Nov 11 22:52:35 microk8s-vm systemd[1]: Started Service for snap application microk8s.daemon-cluster-agent.
+Nov 11 22:52:39 microk8s-vm microk8s.daemon-cluster-agent[2785333]: 2023/11/11 22:52:39 Starting cluster agent on https://0.0.0.0:25000
+Nov 11 22:52:39 microk8s-vm microk8s.daemon-cluster-agent[2785333]: 2023/11/11 22:52:39 Starting watch for launch configurations

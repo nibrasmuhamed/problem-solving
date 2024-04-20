@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+
+  mongos:
+    container_name: mongos
+    image: mongo
+    command: mongos --configdb cfgrs/192.168.0.100:10001,192.168.0.100:10002 --bind_ip 0.0.0.0 --port 27017
+    ports:
+      - 30000:27017
+
+# sh.addShard("shard1rs/192.168.0.100:50001,192.168.0.100:50002")
+# sh.addShard("shard2rs/192.168.0.100:60001,192.168.0.100:60002")
+# sh.enableSharding("testdb")
+# sh.shardCollection("testdb.events", { event_date: 1 } )
+# sh.shardCollection("testdb.events", { "event_date": "hashed" } )
+
+# sh.enableSharding("testdb")
+# sh.shardCollection("testdb.events", { "event_date": 1 }, { "event_date": 1, "expireAfterSeconds": 60, "timeRange": [ 
+#     { "min": ISODate("2022-01-01T00:00:00.000Z"), "max": ISODate("2022-06-30T23:59:59.000Z") , "shard": "shard1" }, 
+#     { "min": ISODate("2022-07-01T00:00:00.000Z"), "max": ISODate("2022-12-31T23:59:59.000Z") , "shard": "shard2" } 
+# ]})

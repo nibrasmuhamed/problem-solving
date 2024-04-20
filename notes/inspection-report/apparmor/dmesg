@@ -1,0 +1,615 @@
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x00000000]
+[    0.000000] Linux version 5.15.0-87-generic (buildd@bos02-arm64-078) (gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #97-Ubuntu SMP Tue Oct 3 09:52:42 UTC 2023 (Ubuntu 5.15.0-87.97-generic 5.15.122)
+[    0.000000] efi: EFI v2.70 by EDK II
+[    0.000000] efi: SMBIOS 3.0=0x13fed0000 MEMATTR=0x13e90c698 ACPI 2.0=0x13c740018 MOKvar=0x13c4b0000 MEMRESERVE=0x13cb43218 
+[    0.000000] secureboot: Secure boot disabled
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x000000013C740018 000024 (v02 BOCHS )
+[    0.000000] ACPI: XSDT 0x000000013C74FE98 000064 (v01 BOCHS  BXPC     00000001      01000013)
+[    0.000000] ACPI: FACP 0x000000013C74FA98 000114 (v06 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DSDT 0x000000013C747518 001436 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: APIC 0x000000013C74FC18 000108 (v04 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: PPTT 0x000000013C74FD98 000060 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: GTDT 0x000000013C74D898 000060 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: MCFG 0x000000013C74FF98 00003C (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: SPCR 0x000000013C74E818 000050 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DBG2 0x000000013C74E898 000057 (v00 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: IORT 0x000000013C74E418 000080 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: SPCR: console: pl011,mmio,0x9000000,9600
+[    0.000000] NUMA: Failed to initialise from firmware
+[    0.000000] NUMA: Faking a node at [mem 0x0000000040000000-0x000000013fffffff]
+[    0.000000] NUMA: NODE_DATA [mem 0x13f64df80-0x13f652fff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000040000000-0x00000000ffffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   [mem 0x0000000100000000-0x000000013fffffff]
+[    0.000000]   Device   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000040000000-0x000000013c4affff]
+[    0.000000]   node   0: [mem 0x000000013c4b0000-0x000000013c4bffff]
+[    0.000000]   node   0: [mem 0x000000013c4c0000-0x000000013c5cffff]
+[    0.000000]   node   0: [mem 0x000000013c5d0000-0x000000013c5dffff]
+[    0.000000]   node   0: [mem 0x000000013c5e0000-0x000000013c76ffff]
+[    0.000000]   node   0: [mem 0x000000013c770000-0x000000013cb3ffff]
+[    0.000000]   node   0: [mem 0x000000013cb40000-0x000000013fe1ffff]
+[    0.000000]   node   0: [mem 0x000000013fe20000-0x000000013feaffff]
+[    0.000000]   node   0: [mem 0x000000013feb0000-0x000000013febffff]
+[    0.000000]   node   0: [mem 0x000000013fec0000-0x000000013ffdffff]
+[    0.000000]   node   0: [mem 0x000000013ffe0000-0x000000013fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x000000013fffffff]
+[    0.000000] cma: Reserved 32 MiB at 0x00000000fe000000
+[    0.000000] psci: probing for conduit method from ACPI.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: Trusted OS migration not required
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] ACPI: SRAT not present
+[    0.000000] percpu: Embedded 30 pages/cpu s85720 r8192 d28968 u122880
+[    0.000000] pcpu-alloc: s85720 r8192 d28968 u122880 alloc=30*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 
+[    0.000000] Detected PIPT I-cache on CPU0
+[    0.000000] CPU features: detected: Address authentication (IMP DEF algorithm)
+[    0.000000] CPU features: detected: Spectre-v4
+[    0.000000] alternatives: patching kernel code
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 1032192
+[    0.000000] Policy zone: Normal
+[    0.000000] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.15.0-87-generic root=UUID=9af6730e-31bf-4e6b-986b-fbce717a2b8d ro console=tty1 console=ttyS0
+[    0.000000] Unknown kernel command line parameters "BOOT_IMAGE=/boot/vmlinuz-5.15.0-87-generic", will be passed to user space.
+[    0.000000] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] mem auto-init: stack:off, heap alloc:on, heap free:off
+[    0.000000] software IO TLB: mapped [mem 0x00000000fa000000-0x00000000fe000000] (64MB)
+[    0.000000] Memory: 3932104K/4194304K available (17280K kernel code, 4576K rwdata, 13928K rodata, 9600K init, 1194K bss, 229432K reserved, 32768K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] ftrace: allocating 54239 entries in 212 pages
+[    0.000000] ftrace: allocated 212 pages with 4 groups
+[    0.000000] trace event string verifier disabled
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=2.
+[    0.000000] 	Rude variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] GICv3: 256 SPIs implemented
+[    0.000000] GICv3: 0 Extended SPIs implemented
+[    0.000000] GICv3: Distributor has no Range Selector support
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv3: 16 PPIs implemented
+[    0.000000] GICv3: CPU0: found redistributor 0 region 0:0x00000000080a0000
+[    0.000000] ACPI: SRAT not present
+[    0.000000] ITS [mem 0x08080000-0x0809ffff]
+[    0.000000] ITS@0x0000000008080000: allocated 8192 Devices @1001c0000 (indirect, esz 8, psz 64K, shr 1)
+[    0.000000] ITS@0x0000000008080000: allocated 8192 Interrupt Collections @1001d0000 (flat, esz 8, psz 64K, shr 1)
+[    0.000000] GICv3: using LPI property table @0x00000001001e0000
+[    0.000000] GICv3: CPU0: using allocated LPI pending table @0x00000001001f0000
+[    0.000000] arch_timer: cp15 timer(s) running at 24.00MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+[    0.000000] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+[    0.000046] Console: colour dummy device 80x25
+[    0.000094] printk: console [tty1] enabled
+[    0.000109] ACPI: Core revision 20210730
+[    0.000152] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=96000)
+[    0.000154] pid_max: default: 32768 minimum: 301
+[    0.000186] LSM: Security Framework initializing
+[    0.000191] landlock: Up and running.
+[    0.000191] Yama: becoming mindful.
+[    0.000214] AppArmor: AppArmor initialized
+[    0.000262] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.000278] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.000642] rcu: Hierarchical SRCU implementation.
+[    0.000797] Platform MSI: ITS@0x8080000 domain created
+[    0.000799] PCI/MSI: ITS@0x8080000 domain created
+[    0.000800] fsl-mc MSI: ITS@0x8080000 domain created
+[    0.000810] Remapping and enabling EFI services.
+[    0.001010] smp: Bringing up secondary CPUs ...
+[    0.001254] Detected PIPT I-cache on CPU1
+[    0.001262] GICv3: CPU1: found redistributor 1 region 0:0x00000000080c0000
+[    0.001380] GICv3: CPU1: using allocated LPI pending table @0x0000000100200000
+[    0.001559] CPU1: Booted secondary processor 0x0000000001 [0x00000000]
+[    0.001632] smp: Brought up 1 node, 2 CPUs
+[    0.001636] SMP: Total of 2 processors activated.
+[    0.001638] CPU features: detected: ARMv8.4 Translation Table Level
+[    0.001639] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+[    0.001640] CPU features: detected: Common not Private translations
+[    0.001641] CPU features: detected: CRC32 instructions
+[    0.001642] CPU features: detected: Data cache clean to Point of Deep Persistence
+[    0.001643] CPU features: detected: Data cache clean to Point of Persistence
+[    0.001643] CPU features: detected: E0PD
+[    0.001644] CPU features: detected: Generic authentication (IMP DEF algorithm)
+[    0.001645] CPU features: detected: RCpc load-acquire (LDAPR)
+[    0.001646] CPU features: detected: LSE atomic instructions
+[    0.001646] CPU features: detected: Privileged Access Never
+[    0.001647] CPU features: detected: RAS Extension Support
+[    0.001648] CPU features: detected: Speculation barrier (SB)
+[    0.001649] CPU features: detected: TLB range maintenance instructions
+[    0.060274] CPU: All CPU(s) started at EL1
+[    0.060725] devtmpfs: initialized
+[    0.061009] Registered cp15_barrier emulation handler
+[    0.061011] setend instruction emulation is not supported on this system
+[    0.061012] KASLR disabled due to lack of seed
+[    0.061042] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.061051] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    0.061128] pinctrl core: initialized pinctrl subsystem
+[    0.061217] SMBIOS 3.0.0 present.
+[    0.061219] DMI: QEMU QEMU Virtual Machine, BIOS edk2-stable202302-for-qemu 03/01/2023
+[    0.061371] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.076402] DMA: preallocated 512 KiB GFP_KERNEL pool for atomic allocations
+[    0.076612] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.076860] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.076894] audit: initializing netlink subsys (disabled)
+[    0.077012] audit: type=2000 audit(0.064:1): state=initialized audit_enabled=0 res=1
+[    0.077137] thermal_sys: Registered thermal governor 'fair_share'
+[    0.077138] thermal_sys: Registered thermal governor 'bang_bang'
+[    0.077139] thermal_sys: Registered thermal governor 'step_wise'
+[    0.077140] thermal_sys: Registered thermal governor 'user_space'
+[    0.077141] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.077152] cpuidle: using governor ladder
+[    0.077158] cpuidle: using governor menu
+[    0.077187] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.077239] ASID allocator initialised with 256 entries
+[    0.077288] ACPI: bus type PCI registered
+[    0.077292] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.077357] Serial: AMBA PL011 UART driver
+[    0.078166] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.078168] HugeTLB registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.078169] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.078170] HugeTLB registered 64.0 KiB page size, pre-allocated 0 pages
+[    0.081817] fbcon: Taking over console
+[    0.081827] ACPI: Added _OSI(Module Device)
+[    0.081827] ACPI: Added _OSI(Processor Device)
+[    0.081828] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.081829] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.081830] ACPI: Added _OSI(Linux-Dell-Video)
+[    0.081831] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+[    0.081831] ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+[    0.082112] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[    0.082204] ACPI: Interpreter enabled
+[    0.082205] ACPI: Using GIC for interrupt routing
+[    0.082209] ACPI: MCFG table detected, 1 entries
+[    0.082872] ARMH0011:00: ttyAMA0 at MMIO 0x9000000 (irq = 12, base_baud = 0) is a SBSA
+[    0.103454] printk: console [ttyAMA0] enabled
+[    0.104026] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-0f])
+[    0.104158] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+[    0.104377] acpi PNP0A08:00: _OSC: platform does not support [LTR DPC]
+[    0.104530] acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug SHPCHotplug PME AER PCIeCapability]
+[    0.104764] acpi PNP0A08:00: ECAM area [mem 0x3f000000-0x3fffffff] reserved by PNP0C02:00
+[    0.104929] acpi PNP0A08:00: ECAM at [mem 0x3f000000-0x3fffffff] for [bus 00-0f]
+[    0.105081] ACPI: Remapped I/O 0x000000003eff0000 to [io  0x0000-0xffff window]
+[    0.105245] PCI host bridge to bus 0000:00
+[    0.105328] pci_bus 0000:00: root bus resource [bus 00-0f]
+[    0.105438] pci_bus 0000:00: root bus resource [io  0x0000-0xffff window]
+[    0.105573] pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff window]
+[    0.105738] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000
+[    0.105943] pci 0000:00:01.0: [1af4:1000] type 00 class 0x020000
+[    0.106178] pci 0000:00:01.0: reg 0x10: [io  0x00c0-0x00df]
+[    0.106577] pci 0000:00:01.0: reg 0x20: [mem 0x10048000-0x1004bfff 64bit pref]
+[    0.106797] pci 0000:00:01.0: reg 0x30: [mem 0xfffc0000-0xffffffff pref]
+[    0.107013] pci 0000:00:02.0: [1af4:1004] type 00 class 0x010000
+[    0.107215] pci 0000:00:02.0: reg 0x10: [io  0x0080-0x00bf]
+[    0.107416] pci 0000:00:02.0: reg 0x14: [mem 0x1004d000-0x1004dfff]
+[    0.107813] pci 0000:00:02.0: reg 0x20: [mem 0x10044000-0x10047fff 64bit pref]
+[    0.108121] pci 0000:00:03.0: [1af4:1001] type 00 class 0x010000
+[    0.108321] pci 0000:00:03.0: reg 0x10: [io  0x0000-0x007f]
+[    0.108503] pci 0000:00:03.0: reg 0x14: [mem 0x1004c000-0x1004cfff]
+[    0.108845] pci 0000:00:03.0: reg 0x20: [mem 0x10040000-0x10043fff 64bit pref]
+[    0.109160] pci 0000:00:01.0: BAR 6: assigned [mem 0x10000000-0x1003ffff pref]
+[    0.109304] pci 0000:00:01.0: BAR 4: assigned [mem 0x10040000-0x10043fff 64bit pref]
+[    0.109465] pci 0000:00:02.0: BAR 4: assigned [mem 0x10044000-0x10047fff 64bit pref]
+[    0.109625] pci 0000:00:03.0: BAR 4: assigned [mem 0x10048000-0x1004bfff 64bit pref]
+[    0.109785] pci 0000:00:02.0: BAR 1: assigned [mem 0x1004c000-0x1004cfff]
+[    0.109922] pci 0000:00:03.0: BAR 1: assigned [mem 0x1004d000-0x1004dfff]
+[    0.110059] pci 0000:00:03.0: BAR 0: assigned [io  0x1000-0x107f]
+[    0.110253] pci 0000:00:02.0: BAR 0: assigned [io  0x1080-0x10bf]
+[    0.110458] pci 0000:00:01.0: BAR 0: assigned [io  0x10c0-0x10df]
+[    0.110646] pci_bus 0000:00: resource 4 [io  0x0000-0xffff window]
+[    0.110770] pci_bus 0000:00: resource 5 [mem 0x10000000-0x3efeffff window]
+[    0.110915] ACPI: PCI: Interrupt link GSI0 configured for IRQ 35
+[    0.111036] ACPI: PCI: Interrupt link GSI1 configured for IRQ 36
+[    0.111157] ACPI: PCI: Interrupt link GSI2 configured for IRQ 37
+[    0.111277] ACPI: PCI: Interrupt link GSI3 configured for IRQ 38
+[    0.111534] iommu: Default domain type: Translated 
+[    0.111668] iommu: DMA domain TLB invalidation policy: strict mode 
+[    0.111905] SCSI subsystem initialized
+[    0.112044] libata version 3.00 loaded.
+[    0.112063] vgaarb: loaded
+[    0.112136] ACPI: bus type USB registered
+[    0.112222] usbcore: registered new interface driver usbfs
+[    0.112334] usbcore: registered new interface driver hub
+[    0.112441] usbcore: registered new device driver usb
+[    0.112563] pps_core: LinuxPPS API ver. 1 registered
+[    0.112662] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.112843] PTP clock support registered
+[    0.112972] EDAC MC: Ver: 3.0.0
+[    0.113140] Registered efivars operations
+[    0.113431] NetLabel: Initializing
+[    0.113501] NetLabel:  domain hash size = 128
+[    0.113587] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.113717] NetLabel:  unlabeled traffic allowed by default
+[    0.113982] clocksource: Switched to clocksource arch_sys_counter
+[    0.122077] VFS: Disk quotas dquot_6.6.0
+[    0.122189] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.122411] AppArmor: AppArmor Filesystem Enabled
+[    0.122529] pnp: PnP ACPI init
+[    0.122649] system 00:00: [mem 0x3f000000-0x3fffffff window] could not be reserved
+[    0.122810] pnp: PnP ACPI: found 1 devices
+[    0.123382] NET: Registered PF_INET protocol family
+[    0.123608] IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.124288] tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+[    0.124534] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.124744] TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.125019] TCP bind hash table entries: 32768 (order: 7, 524288 bytes, linear)
+[    0.125181] TCP: Hash tables configured (established 32768 bind 32768)
+[    0.125411] MPTCP token hash table entries: 4096 (order: 4, 98304 bytes, linear)
+[    0.125584] UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    0.125733] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    0.125897] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.126042] NET: Registered PF_XDP protocol family
+[    0.126164] PCI: CLS 0 bytes, default 64
+[    0.126306] Trying to unpack rootfs image as initramfs...
+[    0.134086] kvm [1]: HYP mode not available
+[    0.134325] Initialise system trusted keyrings
+[    0.134429] Key type blacklist registered
+[    0.134563] workingset: timestamp_bits=40 max_order=20 bucket_order=0
+[    0.146337] zbud: loaded
+[    0.146626] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.146926] fuse: init (API version 7.34)
+[    0.147140] integrity: Platform Keyring initialized
+[    0.156698] Key type asymmetric registered
+[    0.156791] Asymmetric key parser 'x509' registered
+[    0.156907] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+[    0.157090] io scheduler mq-deadline registered
+[    0.159184] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    0.159588] input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0
+[    0.159777] ACPI: button: Power Button [PWRB]
+[    0.161157] ACPI: \_SB_.PCI0.GSI1: Enabled at IRQ 36
+[    0.161276] virtio-pci 0000:00:01.0: enabling device (0005 -> 0007)
+[    0.161698] ACPI: \_SB_.PCI0.GSI2: Enabled at IRQ 37
+[    0.161820] virtio-pci 0000:00:02.0: enabling device (0005 -> 0007)
+[    0.162307] ACPI: \_SB_.PCI0.GSI3: Enabled at IRQ 38
+[    0.162437] virtio-pci 0000:00:03.0: enabling device (0005 -> 0007)
+[    0.162938] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    0.163698] SuperH (H)SCI(F) driver initialized
+[    0.163827] msm_serial: driver initialized
+[    0.165285] loop: module loaded
+[    0.165409] SPI driver altr_a10sr has no spi_device_id for altr,a10sr
+[    0.165677] tun: Universal TUN/TAP device driver, 1.6
+[    0.165841] PPP generic driver version 2.4.2
+[    0.165961] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.166205] ehci-pci: EHCI PCI platform driver
+[    0.166311] ehci-orion: EHCI orion driver
+[    0.166405] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    0.166536] ohci-pci: OHCI PCI platform driver
+[    0.166631] uhci_hcd: USB Universal Host Controller Interface driver
+[    0.166808] mousedev: PS/2 mouse device common for all mice
+[    0.166996] rtc-efi rtc-efi.0: registered as rtc0
+[    0.167101] rtc-efi rtc-efi.0: setting system clock to 2023-11-02T10:41:12 UTC (1698921672)
+[    0.167299] i2c_dev: i2c /dev entries driver
+[    0.167465] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+[    0.167744] device-mapper: uevent: version 1.0.3
+[    0.167884] device-mapper: ioctl: 4.45.0-ioctl (2021-03-22) initialised: dm-devel@redhat.com
+[    0.168215] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.168471] drop_monitor: Initializing network drop monitor service
+[    0.168704] NET: Registered PF_INET6 protocol family
+[    0.294430] Freeing initrd memory: 30316K
+[    0.300971] Segment Routing with IPv6
+[    0.301251] In-situ OAM (IOAM) with IPv6
+[    0.301610] NET: Registered PF_PACKET protocol family
+[    0.302060] Key type dns_resolver registered
+[    0.302239] registered taskstats version 1
+[    0.302416] Loading compiled-in X.509 certificates
+[    0.303025] Loaded X.509 cert 'Build time autogenerated kernel key: c8152be16a3b20a6ed4ecc1f9831bd31f4c9828d'
+[    0.303570] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+[    0.304108] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+[    0.304313] blacklist: Loading compiled-in revocation X.509 certificates
+[    0.304459] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+[    0.304665] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+[    0.304883] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+[    0.305109] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+[    0.305332] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+[    0.305555] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+[    0.305777] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+[    0.306012] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+[    0.306306] zswap: loaded using pool lzo/zbud
+[    0.306581] Key type .fscrypt registered
+[    0.306663] Key type fscrypt-provisioning registered
+[    0.318679] cryptd: max_cpu_qlen set to 1000
+[    0.325671] Key type encrypted registered
+[    0.325971] AppArmor: AppArmor sha1 policy hashing enabled
+[    0.326272] integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+[    0.326690] integrity: Loaded X.509 cert 'Canonical Ltd. Master Certificate Authority: ad91990bc22ab1f517048c23b6655a268e345a63'
+[    0.326922] ima: No TPM chip found, activating TPM-bypass!
+[    0.327032] Loading compiled-in module X.509 certificates
+[    0.327476] Loaded X.509 cert 'Build time autogenerated kernel key: c8152be16a3b20a6ed4ecc1f9831bd31f4c9828d'
+[    0.327671] ima: Allocated hash algorithm: sha1
+[    0.327765] ima: No architecture policies found
+[    0.327864] evm: Initialising EVM extended attributes:
+[    0.327966] evm: security.selinux
+[    0.328032] evm: security.SMACK64
+[    0.328098] evm: security.SMACK64EXEC
+[    0.328171] evm: security.SMACK64TRANSMUTE
+[    0.328252] evm: security.SMACK64MMAP
+[    0.328325] evm: security.apparmor
+[    0.328392] evm: security.ima
+[    0.328451] evm: security.capability
+[    0.328522] evm: HMAC attrs: 0x1
+[    0.331133] Freeing unused kernel memory: 9600K
+[    0.394266] Checked W+X mappings: passed, no W+X pages found
+[    0.394443] Run /init as init process
+[    0.394551]   with arguments:
+[    0.394552]     /init
+[    0.394553]   with environment:
+[    0.394553]     HOME=/
+[    0.394553]     TERM=linux
+[    0.394554]     BOOT_IMAGE=/boot/vmlinuz-5.15.0-87-generic
+[    0.558990] virtio_blk virtio2: [vda] 104 512-byte logical blocks (53.2 kB/52.0 KiB)
+[    0.573653] virtio_net virtio0 enp0s1: renamed from eth0
+[    0.577582] scsi host0: Virtio SCSI HBA
+[    0.578006] scsi 0:0:0:0: Direct-Access     QEMU     QEMU HARDDISK    2.5+ PQ: 0 ANSI: 5
+[    0.625343] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    0.625478] sd 0:0:0:0: Power-on or device reset occurred
+[    0.626913] sd 0:0:0:0: [sda] 104857600 512-byte logical blocks: (53.7 GB/50.0 GiB)
+[    0.627451] sd 0:0:0:0: [sda] Write Protect is off
+[    0.627732] sd 0:0:0:0: [sda] Mode Sense: 63 00 00 08
+[    0.628026] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    0.632464]  sda: sda1 sda15
+[    0.634345] sd 0:0:0:0: [sda] Attached SCSI disk
+[    2.129469] raid6: neonx8   gen() 38245 MB/s
+[    2.209631] raid6: neonx8   xor() 32718 MB/s
+[    2.296069] raid6: neonx4   gen() 37084 MB/s
+[    2.365506] raid6: neonx4   xor() 30393 MB/s
+[    2.435095] raid6: neonx2   gen() 39500 MB/s
+[    2.509989] raid6: neonx2   xor() 27223 MB/s
+[    2.589991] raid6: neonx1   gen() 31300 MB/s
+[    2.669985] raid6: neonx1   xor() 21114 MB/s
+[    2.760715] raid6: int64x8  gen() 16034 MB/s
+[    2.833671] raid6: int64x8  xor()  8561 MB/s
+[    2.913633] raid6: int64x4  gen() 16257 MB/s
+[    2.993989] raid6: int64x4  xor()  6580 MB/s
+[    3.080373] raid6: int64x2  gen() 12250 MB/s
+[    3.158019] raid6: int64x2  xor()  7442 MB/s
+[    3.237989] raid6: int64x1  gen()  9716 MB/s
+[    3.317989] raid6: int64x1  xor()  5108 MB/s
+[    3.318086] raid6: using algorithm neonx2 gen() 39500 MB/s
+[    3.318195] raid6: .... xor() 27223 MB/s, rmw enabled
+[    3.318296] raid6: using neon recovery algorithm
+[    3.319830] xor: measuring software checksum speed
+[    3.320204]    8regs           : 36374 MB/sec
+[    3.320625]    32regs          : 29509 MB/sec
+[    3.320886]    arm64_neon      : 56254 MB/sec
+[    3.320973] xor: using function: arm64_neon (56254 MB/sec)
+[    3.321579] async_tx: api initialized (async)
+[    3.366811] Btrfs loaded, crc32c=crc32c-generic, zoned=yes, fsverity=yes
+[    3.402336] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+[    3.644344] systemd[1]: Inserted module 'autofs4'
+[    3.657857] systemd[1]: systemd 249.11-0ubuntu3.10 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+[    3.658779] systemd[1]: Detected virtualization qemu.
+[    3.658884] systemd[1]: Detected architecture arm64.
+[    3.660549] systemd[1]: Hostname set to <microk8s-vm>.
+[    3.729317] random: lvmconfig: uninitialized urandom read (4 bytes read)
+[    3.852745] systemd[1]: Queued start job for default target Graphical Interface.
+[    3.853086] random: systemd: uninitialized urandom read (16 bytes read)
+[    3.914399] systemd[1]: Created slice Slice /system/modprobe.
+[    3.914646] random: systemd: uninitialized urandom read (16 bytes read)
+[    3.915159] systemd[1]: Created slice Slice /system/serial-getty.
+[    3.915705] systemd[1]: Created slice Slice /system/systemd-fsck.
+[    3.916120] systemd[1]: Created slice User and Session Slice.
+[    3.916386] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    3.916801] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[    3.917168] systemd[1]: Reached target Slice Units.
+[    3.917347] systemd[1]: Reached target Mounting snaps.
+[    3.917531] systemd[1]: Reached target Swaps.
+[    3.917700] systemd[1]: Reached target Local Verity Protected Volumes.
+[    3.917998] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[    3.918292] systemd[1]: Listening on LVM2 poll daemon socket.
+[    3.918551] systemd[1]: Listening on multipathd control socket.
+[    3.918811] systemd[1]: Listening on Syslog Socket.
+[    3.919064] systemd[1]: Listening on fsck to fsckd communication Socket.
+[    3.919302] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[    3.919683] systemd[1]: Listening on Journal Audit Socket.
+[    3.919943] systemd[1]: Listening on Journal Socket (/dev/log).
+[    3.920229] systemd[1]: Listening on Journal Socket.
+[    3.920522] systemd[1]: Listening on Network Service Netlink Socket.
+[    3.920827] systemd[1]: Listening on udev Control Socket.
+[    3.921079] systemd[1]: Listening on udev Kernel Socket.
+[    3.921820] systemd[1]: Mounting Huge Pages File System...
+[    3.922553] systemd[1]: Mounting POSIX Message Queue File System...
+[    3.924222] systemd[1]: Mounting Kernel Debug File System...
+[    3.925135] systemd[1]: Mounting Kernel Trace File System...
+[    3.928664] systemd[1]: Starting Journal Service...
+[    3.929370] systemd[1]: Starting Set the console keyboard layout...
+[    3.930167] systemd[1]: Starting Create List of Static Device Nodes...
+[    3.930845] systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+[    3.931116] systemd[1]: Condition check resulted in LXD - agent being skipped.
+[    3.931772] systemd[1]: Starting Load Kernel Module configfs...
+[    3.932386] systemd[1]: Starting Load Kernel Module drm...
+[    3.933010] systemd[1]: Starting Load Kernel Module efi_pstore...
+[    3.933688] systemd[1]: Starting Load Kernel Module fuse...
+[    3.939055] systemd[1]: Condition check resulted in OpenVSwitch configuration for cleanup being skipped.
+[    3.939536] systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+[    3.942205] systemd[1]: Starting Load Kernel Modules...
+[    3.942855] systemd[1]: Starting Remount Root and Kernel File Systems...
+[    3.943602] systemd[1]: Starting Coldplug All udev Devices...
+[    3.944970] systemd[1]: Mounted Huge Pages File System.
+[    3.946067] systemd[1]: Mounted POSIX Message Queue File System.
+[    3.946264] systemd[1]: Mounted Kernel Debug File System.
+[    3.946449] systemd[1]: Mounted Kernel Trace File System.
+[    3.946812] systemd[1]: Finished Create List of Static Device Nodes.
+[    3.959237] systemd[1]: Finished Load Kernel Modules.
+[    3.959933] systemd[1]: Starting Apply Kernel Variables...
+[    3.960286] systemd[1]: modprobe@configfs.service: Deactivated successfully.
+[    3.960583] systemd[1]: Finished Load Kernel Module configfs.
+[    3.960967] systemd[1]: modprobe@fuse.service: Deactivated successfully.
+[    3.961235] EXT4-fs (sda1): re-mounted. Opts: discard,errors=remount-ro. Quota mode: none.
+[    3.961835] systemd[1]: Finished Load Kernel Module fuse.
+[    3.962952] systemd[1]: Finished Remount Root and Kernel File Systems.
+[    3.964146] systemd[1]: Mounting FUSE Control File System...
+[    3.964989] systemd[1]: Mounting Kernel Configuration File System...
+[    3.965611] systemd[1]: Starting Device-Mapper Multipath Device Controller...
+[    3.968770] systemd[1]: Starting Load/Save Random Seed...
+[    3.969528] systemd[1]: Starting Create System Users...
+[    3.970542] systemd[1]: Mounted FUSE Control File System.
+[    3.970981] systemd[1]: Mounted Kernel Configuration File System.
+[    3.975704] alua: device handler registered
+[    3.981216] systemd[1]: Started Journal Service.
+[    3.982059] pstore: Using crash dump compression: deflate
+[    3.982095] emc: device handler registered
+[    3.982174] pstore: Registered efi as persistent store backend
+[    3.986341] rdac: device handler registered
+[    4.008678] systemd-journald[400]: Received client request to flush runtime journal.
+[    4.056890] loop0: detected capacity change from 0 to 224472
+[    4.064997] loop1: detected capacity change from 0 to 305848
+[    4.065111] loop2: detected capacity change from 0 to 305656
+[    4.065499] loop3: detected capacity change from 0 to 121368
+[    4.066939] loop4: detected capacity change from 0 to 8
+[    4.068375] loop5: detected capacity change from 0 to 72736
+[    4.600808] audit: type=1400 audit(1698921676.928:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="cri-containerd.apparmor.d" pid=541 comm="apparmor_parser"
+[    4.602910] audit: type=1400 audit(1698921676.932:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=542 comm="apparmor_parser"
+[    4.606549] audit: type=1400 audit(1698921676.936:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=543 comm="apparmor_parser"
+[    4.606551] audit: type=1400 audit(1698921676.936:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=543 comm="apparmor_parser"
+[    4.610395] audit: type=1400 audit(1698921676.940:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=545 comm="apparmor_parser"
+[    4.610397] audit: type=1400 audit(1698921676.940:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=545 comm="apparmor_parser"
+[    4.610398] audit: type=1400 audit(1698921676.940:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=545 comm="apparmor_parser"
+[    4.616855] audit: type=1400 audit(1698921676.944:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="tcpdump" pid=546 comm="apparmor_parser"
+[    4.619236] audit: type=1400 audit(1698921676.948:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=544 comm="apparmor_parser"
+[    6.317998] random: crng init done
+[    6.318004] random: 232 urandom warning(s) missed due to ratelimiting
+[    6.409181] ISO 9660 Extensions: Microsoft Joliet Level 3
+[    6.409399] ISOFS: changing to secondary root
+[   11.684141] loop6: detected capacity change from 0 to 8
+[   11.872400] kauditd_printk_skb: 88 callbacks suppressed
+[   11.872405] audit: type=1400 audit(1698921684.200:99): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="lsb_release" pid=1049 comm="apparmor_parser"
+[   11.875537] audit: type=1400 audit(1698921684.204:100): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="nvidia_modprobe" pid=1062 comm="apparmor_parser"
+[   11.875540] audit: type=1400 audit(1698921684.204:101): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="nvidia_modprobe//kmod" pid=1062 comm="apparmor_parser"
+[   11.892934] audit: type=1400 audit(1698921684.220:102): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=1064 comm="apparmor_parser"
+[   11.892942] audit: type=1400 audit(1698921684.220:103): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=1064 comm="apparmor_parser"
+[   11.892945] audit: type=1400 audit(1698921684.220:104): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=1064 comm="apparmor_parser"
+[   11.892946] audit: type=1400 audit(1698921684.220:105): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/{,usr/}sbin/dhclient" pid=1064 comm="apparmor_parser"
+[   11.897289] audit: type=1400 audit(1698921684.224:106): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/usr/bin/man" pid=1072 comm="apparmor_parser"
+[   11.897293] audit: type=1400 audit(1698921684.224:107): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="man_filter" pid=1072 comm="apparmor_parser"
+[   11.897294] audit: type=1400 audit(1698921684.224:108): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="man_groff" pid=1072 comm="apparmor_parser"
+[   14.086584] bpfilter: Loaded bpfilter_umh pid 1309
+[   14.086831] Started bpfilter
+[   14.535543] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[   14.536884] Bridge firewalling registered
+[   29.213402] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+[   29.213435] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[   30.668771] Initializing XFRM netlink socket
+[   36.904845] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   36.904903] IPv6: ADDRCONF(NETDEV_CHANGE): cali5da513a72b4: link becomes ready
+[   36.951010] IPv6: ADDRCONF(NETDEV_CHANGE): cali5b7d94649f1: link becomes ready
+[   37.916304] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   37.916317] IPv6: ADDRCONF(NETDEV_CHANGE): cali70abcd1eb99: link becomes ready
+[   38.011075] IPv6: ADDRCONF(NETDEV_CHANGE): caliea0e095a931: link becomes ready
+[   38.120361] IPv6: ADDRCONF(NETDEV_CHANGE): calide1aaefed84: link becomes ready
+[   39.013068] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   39.013136] IPv6: ADDRCONF(NETDEV_CHANGE): cali3a3d8231182: link becomes ready
+[   39.176389] IPv6: ADDRCONF(NETDEV_CHANGE): cali968fe52124c: link becomes ready
+[   40.362736] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   40.362764] IPv6: ADDRCONF(NETDEV_CHANGE): cali638d015f16c: link becomes ready
+[   40.437670] IPv6: ADDRCONF(NETDEV_CHANGE): cali344b2cc3d64: link becomes ready
+[   42.780643] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   42.780722] IPv6: ADDRCONF(NETDEV_CHANGE): calibf32f66c5db: link becomes ready
+[  399.333997] hrtimer: interrupt took 4431345 ns
+[  702.122871] IPv6: ADDRCONF(NETDEV_CHANGE): cali5b7d94649f1: link becomes ready
+[ 1425.465824] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[ 1425.465900] IPv6: ADDRCONF(NETDEV_CHANGE): cali9ba858aea3e: link becomes ready
+[ 1510.390081] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[ 1510.390149] IPv6: ADDRCONF(NETDEV_CHANGE): cali964e0eee6ba: link becomes ready
+[ 1511.373453] IPv6: ADDRCONF(NETDEV_CHANGE): cali43a919e5958: link becomes ready
+[ 1511.408001] IPv6: ADDRCONF(NETDEV_CHANGE): cali43a919e5958: link becomes ready
+[20749.998422] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[20749.998940] IPv6: ADDRCONF(NETDEV_CHANGE): cali1fcfa2d781f: link becomes ready
+[21351.203429] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[21351.203504] IPv6: ADDRCONF(NETDEV_CHANGE): calic5d0bf5bded: link becomes ready
+[21739.837835] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[21739.838162] IPv6: ADDRCONF(NETDEV_CHANGE): calibad00c75f69: link becomes ready
+[22557.059817] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[22557.059906] IPv6: ADDRCONF(NETDEV_CHANGE): cali4f3e752fb74: link becomes ready
+[23650.920783] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[23650.921110] IPv6: ADDRCONF(NETDEV_CHANGE): cali81a3906e226: link becomes ready
+[24213.786226] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[24213.786555] IPv6: ADDRCONF(NETDEV_CHANGE): cali869dbffb31e: link becomes ready
+[25179.467033] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[25179.467553] IPv6: ADDRCONF(NETDEV_CHANGE): caliedae99f7463: link becomes ready
+[29475.731074] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[29475.731633] IPv6: ADDRCONF(NETDEV_CHANGE): cali00438ddd3f5: link becomes ready
+[29483.502926] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[29483.513500] IPv6: ADDRCONF(NETDEV_CHANGE): cali9b8aa9c7ee9: link becomes ready
+[44833.326035] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[44833.326685] IPv6: ADDRCONF(NETDEV_CHANGE): cali9d6c993b85e: link becomes ready
+[44852.107797] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[44852.107864] IPv6: ADDRCONF(NETDEV_CHANGE): calibd7b4d117e9: link becomes ready
+[45166.661997] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[45166.662052] IPv6: ADDRCONF(NETDEV_CHANGE): cali10aeb570a00: link becomes ready
+[45166.849651] IPv6: ADDRCONF(NETDEV_CHANGE): cali48999bc181e: link becomes ready
+[46250.035122] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[46250.035346] IPv6: ADDRCONF(NETDEV_CHANGE): cali2ed81be0864: link becomes ready
+[46394.825807] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[46394.826222] IPv6: ADDRCONF(NETDEV_CHANGE): calia8cdfc86edd: link becomes ready
+[46555.033939] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[46555.046748] IPv6: ADDRCONF(NETDEV_CHANGE): calie7750e74efc: link becomes ready
+[46555.381242] IPv6: ADDRCONF(NETDEV_CHANGE): cali70647a46dba: link becomes ready
+[52167.100793] IPv6: ADDRCONF(NETDEV_CHANGE): cali8c2dd6b81a9: link becomes ready
+[52167.175948] IPv6: ADDRCONF(NETDEV_CHANGE): cali5424ca70d43: link becomes ready
+[53777.703751] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[53777.704021] IPv6: ADDRCONF(NETDEV_CHANGE): cali8ea10d43669: link becomes ready
+[53777.990970] IPv6: ADDRCONF(NETDEV_CHANGE): calib2c4fb99082: link becomes ready
+[54243.622263] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[54243.622494] IPv6: ADDRCONF(NETDEV_CHANGE): calic843095cd9e: link becomes ready
+[63302.866735] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[63302.867026] IPv6: ADDRCONF(NETDEV_CHANGE): cali8c1d2ee5ecc: link becomes ready
+[63304.609506] IPv6: ADDRCONF(NETDEV_CHANGE): calid67f2170d65: link becomes ready
+[63307.073823] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[63307.073876] IPv6: ADDRCONF(NETDEV_CHANGE): calif5d0feaafa0: link becomes ready
+[63309.790999] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[63309.791068] IPv6: ADDRCONF(NETDEV_CHANGE): caliaa21dd933e0: link becomes ready
+[63309.938161] IPv6: ADDRCONF(NETDEV_CHANGE): cali40e882a90fa: link becomes ready
+[63310.130009] IPv6: ADDRCONF(NETDEV_CHANGE): califf8524d9978: link becomes ready
+[63310.210064] IPv6: ADDRCONF(NETDEV_CHANGE): cali1b07df7c1dd: link becomes ready
+[63316.237412] IPv6: ADDRCONF(NETDEV_CHANGE): cali5f753680218: link becomes ready
+[63341.062357] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[63341.062408] IPv6: ADDRCONF(NETDEV_CHANGE): calic98d2a1b573: link becomes ready
+[63341.161628] IPv6: ADDRCONF(NETDEV_CHANGE): cali2698fcd228c: link becomes ready
+[71442.070002] IPv6: ADDRCONF(NETDEV_CHANGE): calicc233b92bca: link becomes ready
+[115428.170936] loop6: detected capacity change from 0 to 305960
+[115441.230562] kauditd_printk_skb: 4 callbacks suppressed
+[115441.230587] audit: type=1400 audit(1699723346.460:113): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.microk8s.add-node" pid=2784747 comm="apparmor_parser"
+[115441.242336] audit: type=1400 audit(1699723346.472:114): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.microk8s.addons" pid=2784748 comm="apparmor_parser"
+[115441.250625] audit: type=1400 audit(1699723346.480:115): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.microk8s.cilium" pid=2784749 comm="apparmor_parser"
+[115441.264534] audit: type=1400 audit(1699723346.492:116): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.microk8s.config" pid=2784750 comm="apparmor_parser"
+[115441.280948] audit: type=1400 audit(1699723346.512:117): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.microk8s.ctr" pid=2784751 comm="apparmor_parser"
+[115441.288627] audit: type=1400 audit(1699723346.520:118): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.microk8s.daemon-apiserver-kicker" pid=2784752 comm="apparmor_parser"
+[115441.298943] audit: type=1400 audit(1699723346.528:119): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.microk8s.daemon-apiserver-proxy" pid=2784753 comm="apparmor_parser"
+[115441.306903] audit: type=1400 audit(1699723346.536:120): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.microk8s.daemon-cluster-agent" pid=2784754 comm="apparmor_parser"
+[115441.313630] audit: type=1400 audit(1699723346.544:121): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.microk8s.daemon-containerd" pid=2784755 comm="apparmor_parser"
+[115441.320778] audit: type=1400 audit(1699723346.552:122): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.microk8s.daemon-etcd" pid=2784756 comm="apparmor_parser"
+[115636.905787] IPv6: ADDRCONF(NETDEV_CHANGE): cali9ba858aea3e: link becomes ready
+[115638.059907] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[115638.059978] IPv6: ADDRCONF(NETDEV_CHANGE): cali3a3d8231182: link becomes ready
+[115638.496477] IPv6: ADDRCONF(NETDEV_CHANGE): calia2951c8cb60: link becomes ready
+[115638.876735] IPv6: ADDRCONF(NETDEV_CHANGE): calide1aaefed84: link becomes ready
+[115638.915862] IPv6: ADDRCONF(NETDEV_CHANGE): cali2ed81be0864: link becomes ready
+[115638.967120] IPv6: ADDRCONF(NETDEV_CHANGE): cali00438ddd3f5: link becomes ready
+[115639.429304] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[115639.429319] IPv6: ADDRCONF(NETDEV_CHANGE): cali5b7d94649f1: link becomes ready
+[115640.829416] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[115640.829466] IPv6: ADDRCONF(NETDEV_CHANGE): cali344b2cc3d64: link becomes ready
+[115641.433807] IPv6: ADDRCONF(NETDEV_CHANGE): caliea0e095a931: link becomes ready
+[115642.186566] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[115642.186637] IPv6: ADDRCONF(NETDEV_CHANGE): calibf32f66c5db: link becomes ready
+[124395.932141] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[124395.932637] IPv6: ADDRCONF(NETDEV_CHANGE): cali9f82718061c: link becomes ready
+[124398.892990] IPv6: ADDRCONF(NETDEV_CHANGE): cali14b6d3e2847: link becomes ready
+[124411.247331] IPv6: ADDRCONF(NETDEV_CHANGE): cali61418807636: link becomes ready
+[124718.262893] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[124718.263168] IPv6: ADDRCONF(NETDEV_CHANGE): califf683d797d2: link becomes ready
+[124718.523627] IPv6: ADDRCONF(NETDEV_CHANGE): calic251abfdedc: link becomes ready
+[124727.848349] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[124727.848445] IPv6: ADDRCONF(NETDEV_CHANGE): cali7bebc7387f4: link becomes ready
+[125013.356397] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[125013.357291] IPv6: ADDRCONF(NETDEV_CHANGE): calied7f458df1a: link becomes ready
+[125191.853489] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[125191.853829] IPv6: ADDRCONF(NETDEV_CHANGE): cali3106462cf6d: link becomes ready
+[126526.201198] sched: RT throttling activated

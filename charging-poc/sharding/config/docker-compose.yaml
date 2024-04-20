@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+
+  configs1:
+    container_name: mongod1
+    image: mongo
+    command: mongod --configsvr --replSet cfgrs --port 27017 --bind_ip 0.0.0.0 --dbpath /data/db
+    ports:
+      - 10001:27017
+    volumes:
+      - mongod1:/data/db
+
+  configs2:
+    container_name: mongod2
+    image: mongo
+    command: mongod --configsvr --replSet cfgrs --port 27017 --bind_ip 0.0.0.0 --dbpath /data/db
+    ports:
+      - 10002:27017
+    volumes:
+      - mongod2:/data/db
+
+
+volumes:
+  mongod1: {}
+  mongod2: {}
+
+# rs.initiate(
+#   {
+#     _id: "cfgrs",
+#     configsvr: true,
+#     members: [
+#       { _id : 0, host : "192.168.0.100:10001" },
+#       { _id : 1, host : "192.168.0.100:10002" }
+#     ]
+#   }
+# )

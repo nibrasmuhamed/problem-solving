@@ -1,0 +1,24 @@
+go 1.22.0
+
+use (
+	./backtrack
+	./bench
+	./demo
+	./distributed-lb
+	./doublylist
+	./dp
+	./dsa
+	./graph
+	./hashing
+	./knapsack
+	./linkedlist
+	./new
+	./olds
+	./prototype
+	./queue
+	./search
+	./sorting
+	./stack
+	./tree
+	./twopointer
+)

@@ -1,0 +1,20 @@
+● snap.microk8s.daemon-kubelite.service - Service for snap application microk8s.daemon-kubelite
+     Loaded: loaded (/etc/systemd/system/snap.microk8s.daemon-kubelite.service; enabled; vendor preset: enabled)
+     Active: active (running) since Wed 2023-11-15 16:18:41 IST; 1h 0min ago
+   Main PID: 3588032 (kubelite)
+      Tasks: 12 (limit: 4607)
+     Memory: 355.0M
+        CPU: 7min 32.443s
+     CGroup: /system.slice/snap.microk8s.daemon-kubelite.service
+             └─3588032 /snap/microk8s/6114/kubelite --scheduler-args-file=/var/snap/microk8s/6114/args/kube-scheduler --controller-manager-args-file=/var/snap/microk8s/6114/args/kube-controller-manager --proxy-args-file=/var/snap/microk8s/6114/args/kube-proxy --kubelet-args-file=/var/snap/microk8s/6114/args/kubelet --apiserver-args-file=/var/snap/microk8s/6114/args/kube-apiserver --kubeconfig-file=/var/snap/microk8s/6114/credentials/client.config --start-control-plane=true
+
+Nov 15 17:18:50 microk8s-vm microk8s.daemon-kubelite[3588032]: Trace[1805454909]: [619.604978ms] [619.604978ms] END
+Nov 15 17:18:50 microk8s-vm microk8s.daemon-kubelite[3588032]: I1115 17:18:50.702234 3588032 trace.go:219] Trace[1656435543]: "Get" accept:application/json, */*,audit-id:6ba55d70-e6ed-466e-9ae3-ffb22a2757a1,client:10.1.254.125,protocol:HTTP/2.0,resource:endpoints,scope:resource,url:/api/v1/namespaces/kube-system/endpoints/microk8s.io-hostpath,user-agent:Go-http-client/2.0,verb:GET (15-Nov-2023 17:18:49.918) (total time: 783ms):
+Nov 15 17:18:50 microk8s-vm microk8s.daemon-kubelite[3588032]: Trace[1656435543]: ---"About to write a response" 783ms (17:18:50.701)
+Nov 15 17:18:50 microk8s-vm microk8s.daemon-kubelite[3588032]: Trace[1656435543]: [783.790857ms] [783.790857ms] END
+Nov 15 17:18:53 microk8s-vm microk8s.daemon-kubelite[3588032]: I1115 17:18:53.420796 3588032 trace.go:219] Trace[1386534122]: "Get" accept:application/vnd.kubernetes.protobuf, */*,audit-id:d6f0848c-1945-4239-8c4c-aae71cca2563,client:127.0.0.1,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/kube-controller-manager,user-agent:kubelite/v1.27.7 (linux/arm64) kubernetes/07a61d8/leader-election,verb:GET (15-Nov-2023 17:18:52.703) (total time: 661ms):
+Nov 15 17:18:53 microk8s-vm microk8s.daemon-kubelite[3588032]: Trace[1386534122]: ---"About to write a response" 661ms (17:18:53.365)
+Nov 15 17:18:53 microk8s-vm microk8s.daemon-kubelite[3588032]: Trace[1386534122]: [661.98535ms] [661.98535ms] END
+Nov 15 17:18:53 microk8s-vm microk8s.daemon-kubelite[3588032]: I1115 17:18:53.487294 3588032 trace.go:219] Trace[15391957]: "Get" accept:application/vnd.kubernetes.protobuf, */*,audit-id:b0d14ccd-ce07-4b41-92ff-b9916995e47b,client:127.0.0.1,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/kube-scheduler,user-agent:kubelite/v1.27.7 (linux/arm64) kubernetes/07a61d8/leader-election,verb:GET (15-Nov-2023 17:18:52.712) (total time: 729ms):
+Nov 15 17:18:53 microk8s-vm microk8s.daemon-kubelite[3588032]: Trace[15391957]: ---"About to write a response" 729ms (17:18:53.442)
+Nov 15 17:18:53 microk8s-vm microk8s.daemon-kubelite[3588032]: Trace[15391957]: [729.839508ms] [729.839508ms] END

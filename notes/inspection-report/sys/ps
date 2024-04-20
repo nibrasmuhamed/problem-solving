@@ -1,0 +1,189 @@
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 Nov13 ?        00:12:09 /sbin/init
+root           2       0  0 Nov13 ?        00:00:04 [kthreadd]
+root           3       2  0 Nov13 ?        00:00:00 [rcu_gp]
+root           4       2  0 Nov13 ?        00:00:00 [rcu_par_gp]
+root           5       2  0 Nov13 ?        00:00:00 [slub_flushwq]
+root           6       2  0 Nov13 ?        00:00:00 [netns]
+root           8       2  0 Nov13 ?        00:00:00 [kworker/0:0H-events_highpri]
+root          10       2  0 Nov13 ?        00:00:00 [mm_percpu_wq]
+root          11       2  0 Nov13 ?        00:00:00 [rcu_tasks_rude_]
+root          12       2  0 Nov13 ?        00:00:00 [rcu_tasks_trace]
+root          13       2  0 Nov13 ?        00:01:18 [ksoftirqd/0]
+root          14       2  0 Nov13 ?        00:07:01 [rcu_sched]
+root          15       2  0 Nov13 ?        00:00:12 [migration/0]
+root          16       2  0 Nov13 ?        00:00:00 [idle_inject/0]
+root          18       2  0 Nov13 ?        00:00:00 [cpuhp/0]
+root          19       2  0 Nov13 ?        00:00:00 [cpuhp/1]
+root          20       2  0 Nov13 ?        00:00:00 [idle_inject/1]
+root          21       2  0 Nov13 ?        00:00:12 [migration/1]
+root          22       2  0 Nov13 ?        00:01:25 [ksoftirqd/1]
+root          24       2  0 Nov13 ?        00:00:00 [kworker/1:0H-events_highpri]
+root          25       2  0 Nov13 ?        00:00:00 [kdevtmpfs]
+root          26       2  0 Nov13 ?        00:00:00 [inet_frag_wq]
+root          28       2  0 Nov13 ?        00:00:00 [kauditd]
+root          29       2  0 Nov13 ?        00:00:02 [khungtaskd]
+root          30       2  0 Nov13 ?        00:00:00 [oom_reaper]
+root          31       2  0 Nov13 ?        00:00:01 [writeback]
+root          32       2  0 Nov13 ?        00:00:41 [kcompactd0]
+root          33       2  0 Nov13 ?        00:00:00 [ksmd]
+root          34       2  0 Nov13 ?        00:00:07 [khugepaged]
+root          80       2  0 Nov13 ?        00:00:00 [kintegrityd]
+root          81       2  0 Nov13 ?        00:00:00 [kblockd]
+root          82       2  0 Nov13 ?        00:00:00 [blkcg_punt_bio]
+root          83       2  0 Nov13 ?        00:00:00 [tpm_dev_wq]
+root          84       2  0 Nov13 ?        00:00:00 [ata_sff]
+root          85       2  0 Nov13 ?        00:00:00 [md]
+root          86       2  0 Nov13 ?        00:00:00 [edac-poller]
+root          87       2  0 Nov13 ?        00:00:00 [devfreq_wq]
+root          88       2  0 Nov13 ?        00:00:00 [watchdogd]
+root          90       2  0 Nov13 ?        00:00:49 [kworker/1:1H-kblockd]
+root          91       2  0 Nov13 ?        00:00:22 [kswapd0]
+root          92       2  0 Nov13 ?        00:00:00 [ecryptfs-kthrea]
+root          94       2  0 Nov13 ?        00:00:00 [kthrotld]
+root          95       2  0 Nov13 ?        00:00:00 [irq/49-ACPI:Ged]
+root          96       2  0 Nov13 ?        00:00:00 [acpi_thermal_pm]
+root          98       2  0 Nov13 ?        00:00:00 [mld]
+root          99       2  0 Nov13 ?        00:00:00 [ipv6_addrconf]
+root         108       2  0 Nov13 ?        00:00:00 [kstrp]
+root         111       2  0 Nov13 ?        00:00:00 [zswap-shrink]
+root         112       2  0 Nov13 ?        00:00:00 [kworker/u5:0]
+root         116       2  0 Nov13 ?        00:00:00 [cryptd]
+root         154       2  0 Nov13 ?        00:00:00 [charger_manager]
+root         200       2  0 Nov13 ?        00:00:52 [kworker/0:1H-kblockd]
+root         213       2  0 Nov13 ?        00:00:00 [scsi_eh_0]
+root         216       2  0 Nov13 ?        00:00:00 [scsi_tmf_0]
+root         279       2  0 Nov13 ?        00:00:00 [raid5wq]
+root         326       2  0 Nov13 ?        00:12:46 [jbd2/sda1-8]
+root         327       2  0 Nov13 ?        00:00:00 [ext4-rsv-conver]
+root         400       1  0 Nov13 ?        00:04:08 /lib/systemd/systemd-journald
+root         425       2  0 Nov13 ?        00:00:00 [kaluad]
+root         428       2  0 Nov13 ?        00:00:00 [kmpath_rdacd]
+root         429       2  0 Nov13 ?        00:00:00 [kmpathd]
+root         430       2  0 Nov13 ?        00:00:00 [kmpath_handlerd]
+root         431       1  0 Nov13 ?        00:02:20 /sbin/multipathd -d -s
+root         449       1  0 Nov13 ?        00:00:05 /lib/systemd/systemd-udevd
+systemd+     539       1  0 Nov13 ?        00:00:08 /lib/systemd/systemd-timesyncd
+systemd+     659       1  0 Nov13 ?        00:00:28 /lib/systemd/systemd-networkd
+systemd+     661       1  0 Nov13 ?        00:00:12 /lib/systemd/systemd-resolved
+root         696       1  0 Nov13 ?        00:00:07 /usr/sbin/cron -f -P
+message+     697       1  0 Nov13 ?        00:00:39 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         702       1  0 Nov13 ?        00:00:46 /usr/sbin/irqbalance --foreground
+root         703       1  0 Nov13 ?        00:00:03 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+syslog       704       1  0 Nov13 ?        00:00:37 /usr/sbin/rsyslogd -n -iNONE
+root         713       1  0 Nov13 ?        00:08:47 /usr/lib/snapd/snapd
+root         715       1  0 Nov13 ?        00:00:16 /lib/systemd/systemd-logind
+root         776       1  0 Nov13 ?        00:00:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root         788       1  0 Nov13 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root        1102       1  0 Nov13 ttyAMA0  00:00:00 /sbin/agetty -o -p -- \u --keep-baud 115200,57600,38400,9600 ttyAMA0 vt220
+root        1104       1  0 Nov13 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root        1309       2  0 Nov13 ?        00:00:05 bpfilter_umh
+root        1441       2  0 Nov13 ?        00:00:00 [dio/sda1]
+root        3851       1  0 Nov13 ?        00:02:32 /snap/microk8s/6072/bin/containerd-shim-runc-v2 -namespace k8s.io -id 6a4ea632a4d1f92047cfa8815e158a3c3f1e6a98bc75720ac4aaefb981067a38 -address /var/snap/microk8s/common/run/containerd.sock
+root        4026       1  0 Nov13 ?        00:02:28 /snap/microk8s/6072/bin/containerd-shim-runc-v2 -namespace k8s.io -id 11bc5100e23de2c238129184012f38927a66d370b38682250ec5e451b3054740 -address /var/snap/microk8s/common/run/containerd.sock
+65535       4082    4026  0 Nov13 ?        00:00:00 /pause
+systemd+    4153    4026  0 Nov13 ?        00:00:00 /usr/bin/dumb-init -- /nginx-ingress-controller --configmap=ingress/nginx-load-balancer-microk8s-conf --tcp-services-configmap=ingress/nginx-ingress-tcp-microk8s-conf --udp-services-configmap=ingress/nginx-ingress-udp-microk8s-conf --ingress-class=public   --publish-status-address=127.0.0.1
+systemd+    4248    4153  0 Nov13 ?        00:08:26 /nginx-ingress-controller --configmap=ingress/nginx-load-balancer-microk8s-conf --tcp-services-configmap=ingress/nginx-ingress-tcp-microk8s-conf --udp-services-configmap=ingress/nginx-ingress-udp-microk8s-conf --ingress-class=public   --publish-status-address=127.0.0.1
+root        4356       1  0 Nov13 ?        00:02:20 /snap/microk8s/6072/bin/containerd-shim-runc-v2 -namespace k8s.io -id bab0ef4b8c4741b4886b3c4fffd24b0b201b58a2cbb24fed3539c63a8023ec34 -address /var/snap/microk8s/common/run/containerd.sock
+65535       4424    4356  0 Nov13 ?        00:00:00 /pause
+root        5161       1  0 Nov13 ?        00:02:08 /snap/microk8s/6072/bin/containerd-shim-runc-v2 -namespace k8s.io -id b5611fa04f71ff842849bd6815537d2430c9e6e1fc504a7546d6cb34fafea256 -address /var/snap/microk8s/common/run/containerd.sock
+65535       5204    5161  0 Nov13 ?        00:00:00 /pause
+root        5266    5161  0 Nov13 ?        00:02:32 registry serve /etc/docker/registry/config.yml
+systemd+    5355    4248  0 Nov13 ?        00:00:01 nginx: master process /usr/bin/nginx -c /etc/nginx/nginx.conf
+root        5788       1  0 Nov13 ?        00:02:23 /snap/microk8s/6072/bin/containerd-shim-runc-v2 -namespace k8s.io -id 48bfbea73e0b74cba7aca642ee05da0a746a4a842c7193b9335990aea67b5be1 -address /var/snap/microk8s/common/run/containerd.sock
+65535       5855    5788  0 Nov13 ?        00:00:00 /pause
+root        5930    5788  0 Nov13 ?        00:15:40 /coredns -conf /etc/coredns/Corefile
+root       46029       1  0 Nov13 ?        00:02:35 /snap/microk8s/6072/bin/containerd-shim-runc-v2 -namespace k8s.io -id a59c73f5a475e74a50cd3a4b3ab20b19b55f94cd01e5e1c9d1f97b35082d5ac3 -address /var/snap/microk8s/common/run/containerd.sock
+65535      46050   46029  0 Nov13 ?        00:00:00 /pause
+root       46187       1  0 Nov13 ?        00:02:36 /snap/microk8s/6072/bin/containerd-shim-runc-v2 -namespace k8s.io -id 738e8239a7e9080e639813767ac395ac2d9701e327bb360dd02480c36c96fe20 -address /var/snap/microk8s/common/run/containerd.sock
+65535      46216   46187  0 Nov13 ?        00:00:00 /pause
+root      118103       1  0 Nov14 ?        00:00:26 /usr/libexec/packagekitd
+root      118107       1  0 Nov14 ?        00:00:01 /usr/libexec/polkitd --no-debug
+systemd+  724352    5355  0 Nov14 ?        00:02:31 nginx: worker process
+systemd+  724353    5355  0 Nov14 ?        00:02:23 nginx: worker process
+systemd+  724354    5355  0 Nov14 ?        00:00:14 nginx: cache manager process
+root      728574       1  0 Nov14 ?        00:02:15 /snap/microk8s/6072/bin/containerd-shim-runc-v2 -namespace k8s.io -id a3388626a0131a55475282a8f8670957fff7d704c6be5ac0bde912e132412c9c -address /var/snap/microk8s/common/run/containerd.sock
+root     1138908       1  0 Nov14 ?        00:01:37 /snap/microk8s/6072/bin/containerd-shim-runc-v2 -namespace k8s.io -id b1e3e022bf9a87e216049e2bb3f0106f0aa95f9fbea1a99c56e505fd6a8d01ac -address /var/snap/microk8s/common/run/containerd.sock
+65535    1138930 1138908  0 Nov14 ?        00:00:00 /pause
+root     1138959 1138908  0 Nov14 ?        00:06:19 /usageEngine
+root     1745390       1  0 Nov14 ?        00:03:10 /snap/microk8s/6072/bin/containerd-shim-runc-v2 -namespace k8s.io -id fbb7d64a83ee5a3deec18975cca3dd9f315784f74ba5b639b74eaccd75ceb82d -address /var/snap/microk8s/common/run/containerd.sock
+root     1745768       1  0 Nov14 ?        00:03:19 /snap/microk8s/6072/bin/containerd-shim-runc-v2 -namespace k8s.io -id 46f044e29ae4a5ed040bbded86bc4892b8c7d425d98e61d9e9f3f7c318f86ca0 -address /var/snap/microk8s/common/run/containerd.sock
+root     2784891       1  2 07:00 ?        00:15:43 /snap/microk8s/6114/bin/containerd --config /var/snap/microk8s/6114/args/containerd.toml --root /var/snap/microk8s/common/var/lib/containerd --state /var/snap/microk8s/common/run/containerd --address /var/snap/microk8s/common/run/containerd.sock
+root     2785181       1  0 07:00 ?        00:00:00 /bin/bash /snap/microk8s/6114/run-cluster-agent-with-args
+root     2785183       1  9 07:00 ?        00:58:08 /snap/microk8s/6114/bin/k8s-dqlite --storage-dir=/var/snap/microk8s/6114/var/kubernetes/backend/ --listen=unix:///var/snap/microk8s/6114/var/kubernetes/backend/kine.sock:12379
+root     2785185       1  0 07:00 ?        00:01:06 /bin/bash /snap/microk8s/6114/apiservice-kicker
+root     2785333 2785181  0 07:00 ?        00:00:54 /snap/microk8s/6114/bin/cluster-agent cluster-agent --bind 0.0.0.0:25000 --keyfile /var/snap/microk8s/6114/certs/server.key --certfile /var/snap/microk8s/6114/certs/server.crt --timeout 240
+root     2790385       1  0 07:03 ?        00:00:39 /snap/microk8s/6114/bin/containerd-shim-runc-v2 -namespace k8s.io -id 658af297fcfa71937dcd7bb57b00f7ebe6552de6009250b6cfce80be79b83123 -address /var/snap/microk8s/common/run/containerd.sock
+root     2790467       1  0 07:03 ?        00:00:41 /snap/microk8s/6114/bin/containerd-shim-runc-v2 -namespace k8s.io -id 1102c303947a187a779872681783c9fbea9f3840da5cc26b245f07c1dbc8512b -address /var/snap/microk8s/common/run/containerd.sock
+65535    2790507 2790467  0 07:03 ?        00:00:00 /pause
+65535    2790535 2790385  0 07:03 ?        00:00:00 /pause
+root     2790739       1  0 07:03 ?        00:00:43 /snap/microk8s/6114/bin/containerd-shim-runc-v2 -namespace k8s.io -id ae19164e218558b1e09d9a76086796819a3583c8ac02b32f953a2eb2bbb5ae01 -address /var/snap/microk8s/common/run/containerd.sock
+1001     2790832 2790385  2 07:03 ?        00:18:11 /opt/bitnami/java/bin/java -Xmx512m -Xms50m -server -XX:+UseG1GC -XX:MaxGCPauseMillis=20 -XX:InitiatingHeapOccupancyPercent=35 -XX:+ExplicitGCInvokesConcurrent -XX:MaxInlineLevel=15 -Djava.awt.headless=true -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dkafka.logs.dir=/opt/bitnami/kafka/bin/../logs -Dlog4j.configuration=file:/opt/bitnami/kafka/bin/../config/log4j.properties -cp /opt/bitnami/kafka/bin/../libs/activation-1.1.1.jar:/opt/bitnami/kafka/bin/../libs/aopalliance-repackaged-2.6.1.jar:/opt/bitnami/kafka/bin/../libs/argparse4j-0.7.0.jar:/opt/bitnami/kafka/bin/../libs/audience-annotations-0.13.0.jar:/opt/bitnami/kafka/bin/../libs/commons-cli-1.4.jar:/opt/bitnami/kafka/bin/../libs/commons-lang3-3.8.1.jar:/opt/bitnami/kafka/bin/../libs/connect-api-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/connect-basic-auth-extension-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/connect-json-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/connect-mirror-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/connect-mirror-client-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/connect-runtime-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/connect-transforms-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/hk2-api-2.6.1.jar:/opt/bitnami/kafka/bin/../libs/hk2-locator-2.6.1.jar:/opt/bitnami/kafka/bin/../libs/hk2-utils-2.6.1.jar:/opt/bitnami/kafka/bin/../libs/jackson-annotations-2.13.5.jar:/opt/bitnami/kafka/bin/../libs/jackson-core-2.13.5.jar:/opt/bitnami/kafka/bin/../libs/jackson-databind-2.13.5.jar:/opt/bitnami/kafka/bin/../libs/jackson-dataformat-csv-2.13.5.jar:/opt/bitnami/kafka/bin/../libs/jackson-datatype-jdk8-2.13.5.jar:/opt/bitnami/kafka/bin/../libs/jackson-jaxrs-base-2.13.5.jar:/opt/bitnami/kafka/bin/../libs/jackson-jaxrs-json-provider-2.13.5.jar:/opt/bitnami/kafka/bin/../libs/jackson-module-jaxb-annotations-2.13.5.jar:/opt/bitnami/kafka/bin/../libs/jackson-module-scala_2.12-2.13.5.jar:/opt/bitnami/kafka/bin/../libs/jakarta.activation-api-1.2.2.jar:/opt/bitnami/kafka/bin/../libs/jakarta.annotation-api-1.3.5.jar:/opt/bitnami/kafka/bin/../libs/jakarta.inject-2.6.1.jar:/opt/bitnami/kafka/bin/../libs/jakarta.validation-api-2.0.2.jar:/opt/bitnami/kafka/bin/../libs/jakarta.ws.rs-api-2.1.6.jar:/opt/bitnami/kafka/bin/../libs/jakarta.xml.bind-api-2.3.3.jar:/opt/bitnami/kafka/bin/../libs/javassist-3.29.2-GA.jar:/opt/bitnami/kafka/bin/../libs/javax.activation-api-1.2.0.jar:/opt/bitnami/kafka/bin/../libs/javax.annotation-api-1.3.2.jar:/opt/bitnami/kafka/bin/../libs/javax.servlet-api-3.1.0.jar:/opt/bitnami/kafka/bin/../libs/javax.ws.rs-api-2.1.1.jar:/opt/bitnami/kafka/bin/../libs/jaxb-api-2.3.1.jar:/opt/bitnami/kafka/bin/../libs/jersey-client-2.39.1.jar:/opt/bitnami/kafka/bin/../libs/jersey-common-2.39.1.jar:/opt/bitnami/kafka/bin/../libs/jersey-container-servlet-2.39.1.jar:/opt/bitnami/kafka/bin/../libs/jersey-container-servlet-core-2.39.1.jar:/opt/bitnami/kafka/bin/../libs/jersey-hk2-2.39.1.jar:/opt/bitnami/kafka/bin/../libs/jersey-server-2.39.1.jar:/opt/bitnami/kafka/bin/../libs/jetty-client-9.4.51.v20230217.jar:/opt/bitnami/kafka/bin/../libs/jetty-continuation-9.4.51.v20230217.jar:/opt/bitnami/kafka/bin/../libs/jetty-http-9.4.51.v20230217.jar:/opt/bitnami/kafka/bin/../libs/jetty-io-9.4.51.v20230217.jar:/opt/bitnami/kafka/bin/../libs/jetty-security-9.4.51.v20230217.jar:/opt/bitnami/kafka/bin/../libs/jetty-server-9.4.51.v20230217.jar:/opt/bitnami/kafka/bin/../libs/jetty-servlet-9.4.51.v20230217.jar:/opt/bitnami/kafka/bin/../libs/jetty-servlets-9.4.51.v20230217.jar:/opt/bitnami/kafka/bin/../libs/jetty-util-9.4.51.v20230217.jar:/opt/bitnami/kafka/bin/../libs/jetty-util-ajax-9.4.51.v20230217.jar:/opt/bitnami/kafka/bin/../libs/jline-3.22.0.jar:/opt/bitnami/kafka/bin/../libs/jopt-simple-5.0.4.jar:/opt/bitnami/kafka/bin/../libs/jose4j-0.9.3.jar:/opt/bitnami/kafka/bin/../libs/kafka-clients-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/kafka-group-coordinator-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/kafka-log4j-appender-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/kafka-metadata-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/kafka-raft-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/kafka-server-common-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/kafka-shell-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/kafka-storage-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/kafka-storage-api-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/kafka-streams-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/kafka-streams-examples-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/kafka-streams-scala_2.12-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/kafka-streams-test-utils-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/kafka-tools-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/kafka-tools-api-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/kafka_2.12-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/lz4-java-1.8.0.jar:/opt/bitnami/kafka/bin/../libs/maven-artifact-3.8.8.jar:/opt/bitnami/kafka/bin/../libs/metrics-core-2.2.0.jar:/opt/bitnami/kafka/bin/../libs/metrics-core-4.1.12.1.jar:/opt/bitnami/kafka/bin/../libs/netty-buffer-4.1.94.Final.jar:/opt/bitnami/kafka/bin/../libs/netty-codec-4.1.94.Final.jar:/opt/bitnami/kafka/bin/../libs/netty-common-4.1.94.Final.jar:/opt/bitnami/kafka/bin/../libs/netty-handler-4.1.94.Final.jar:/opt/bitnami/kafka/bin/../libs/netty-resolver-4.1.94.Final.jar:/opt/bitnami/kafka/bin/../libs/netty-transport-4.1.94.Final.jar:/opt/bitnami/kafka/bin/../libs/netty-transport-classes-epoll-4.1.94.Final.jar:/opt/bitnami/kafka/bin/../libs/netty-transport-native-epoll-4.1.94.Final.jar:/opt/bitnami/kafka/bin/../libs/netty-transport-native-unix-common-4.1.94.Final.jar:/opt/bitnami/kafka/bin/../libs/osgi-resource-locator-1.0.3.jar:/opt/bitnami/kafka/bin/../libs/paranamer-2.8.jar:/opt/bitnami/kafka/bin/../libs/plexus-utils-3.3.1.jar:/opt/bitnami/kafka/bin/../libs/reflections-0.9.12.jar:/opt/bitnami/kafka/bin/../libs/reload4j-1.2.25.jar:/opt/bitnami/kafka/bin/../libs/rocksdbjni-7.1.2.jar:/opt/bitnami/kafka/bin/../libs/scala-collection-compat_2.12-2.10.0.jar:/opt/bitnami/kafka/bin/../libs/scala-java8-compat_2.12-1.0.2.jar:/opt/bitnami/kafka/bin/../libs/scala-library-2.12.15.jar:/opt/bitnami/kafka/bin/../libs/scala-logging_2.12-3.9.4.jar:/opt/bitnami/kafka/bin/../libs/scala-reflect-2.12.15.jar:/opt/bitnami/kafka/bin/../libs/slf4j-api-1.7.36.jar:/opt/bitnami/kafka/bin/../libs/slf4j-reload4j-1.7.36.jar:/opt/bitnami/kafka/bin/../libs/snappy-java-1.1.10.1.jar:/opt/bitnami/kafka/bin/../libs/swagger-annotations-2.2.8.jar:/opt/bitnami/kafka/bin/../libs/trogdor-3.5.1.jar:/opt/bitnami/kafka/bin/../libs/zookeeper-3.6.4.jar:/opt/bitnami/kafka/bin/../libs/zookeeper-jute-3.6.4.jar:/opt/bitnami/kafka/bin/../libs/zstd-jni-1.5.5-1.jar kafka.Kafka /opt/bitnami/kafka/config/server.properties
+65535    2790919 2790739  0 07:03 ?        00:00:00 /pause
+root     2790941       1  0 07:03 ?        00:00:44 /snap/microk8s/6114/bin/containerd-shim-runc-v2 -namespace k8s.io -id 16fdc7116c943b28be4133811edb573d83509e0092cdf9b748736feca587e1ab -address /var/snap/microk8s/common/run/containerd.sock
+65535    2790989 2790941  0 07:03 ?        00:00:00 /pause
+root     2791107       1  0 07:03 ?        00:00:40 /snap/microk8s/6114/bin/containerd-shim-runc-v2 -namespace k8s.io -id 51a994ebb279637be9134fc39fd228db37143b5aacf0d03d5095d1ba4d77a731 -address /var/snap/microk8s/common/run/containerd.sock
+root     2791187 2790739  0 07:03 ?        00:01:31 /usageEngine
+root     2791251 2790941  0 07:03 ?        00:00:00 bin/sh -c mongod --replSet=rs0 --bind_ip_all
+root     2791254       1  0 07:03 ?        00:00:40 /snap/microk8s/6114/bin/containerd-shim-runc-v2 -namespace k8s.io -id 5f55fd4128cae66bcf054d1448193c64269c86887a71a12eb63fe746d615aa21 -address /var/snap/microk8s/common/run/containerd.sock
+65535    2791282 2791107  0 07:03 ?        00:00:00 /pause
+65535    2791337 2791254  0 07:03 ?        00:00:00 /pause
+root     2791432 2791251  2 07:03 ?        00:14:04 mongod --replSet=rs0 --bind_ip_all
+root     2791472       1  0 07:03 ?        00:00:35 /snap/microk8s/6114/bin/containerd-shim-runc-v2 -namespace k8s.io -id c39c54ea03f302f0d17c9f1317b15a27d2345c2f664a6d9e071d9af0ec355aa7 -address /var/snap/microk8s/common/run/containerd.sock
+root     2791500 2791107  0 07:03 ?        00:00:44 registry serve /etc/docker/registry/config.yml
+65535    2791508 2791472  0 07:03 ?        00:00:00 /pause
+root     2791622 2791472  0 07:03 ?        00:05:22 /coredns -conf /etc/coredns/Corefile
+systemd+ 2791628 2791254  0 07:03 ?        00:00:00 /usr/bin/dumb-init -- /nginx-ingress-controller --configmap=ingress/nginx-load-balancer-microk8s-conf --tcp-services-configmap=ingress/nginx-ingress-tcp-microk8s-conf --udp-services-configmap=ingress/nginx-ingress-udp-microk8s-conf --ingress-class=public   --publish-status-address=127.0.0.1
+systemd+ 2791677 2791628  0 07:03 ?        00:02:42 /nginx-ingress-controller --configmap=ingress/nginx-load-balancer-microk8s-conf --tcp-services-configmap=ingress/nginx-ingress-tcp-microk8s-conf --udp-services-configmap=ingress/nginx-ingress-udp-microk8s-conf --ingress-class=public   --publish-status-address=127.0.0.1
+systemd+ 2792155 2791677  0 07:03 ?        00:00:00 nginx: master process /usr/bin/nginx -c /etc/nginx/nginx.conf
+systemd+ 2904916 2792155  0 08:21 ?        00:00:37 nginx: worker process
+systemd+ 2904917 2792155  0 08:21 ?        00:00:38 nginx: worker process
+systemd+ 2904918 2792155  0 08:21 ?        00:00:03 nginx: cache manager process
+root     3009022       1  0 09:29 ?        00:01:52 /snap/microk8s/6114/bin/containerd-shim-runc-v2 -namespace k8s.io -id a589c8d5cc77b99175d37e57aede4693e0fbecce85a351cf7759238b4a5d1b95 -address /var/snap/microk8s/common/run/containerd.sock
+65535    3009043 3009022  0 09:29 ?        00:00:00 /pause
+root     3009398 3009022  0 09:29 ?        00:00:06 /usr/local/bin/runsvdir -P /etc/service/enabled
+root     3009552       1  0 09:29 ?        00:00:32 /snap/microk8s/6114/bin/containerd-shim-runc-v2 -namespace k8s.io -id 296a653245f6df94ae4f55b96c10eebe00b5e358a346d137b9536bfadd8e5536 -address /var/snap/microk8s/common/run/containerd.sock
+65535    3009574 3009552  0 09:29 ?        00:00:00 /pause
+root     3009613 3009552  0 09:29 ?        00:00:18 /adminService
+root     3009628 3009398  0 09:29 ?        00:00:00 runsv monitor-addresses
+root     3009629 3009398  0 09:29 ?        00:00:00 runsv allocate-tunnel-addrs
+root     3009630 3009398  0 09:29 ?        00:00:00 runsv cni
+root     3009631 3009398  0 09:29 ?        00:00:00 runsv node-status-reporter
+root     3009632 3009398  0 09:29 ?        00:00:00 runsv felix
+root     3009633 3009630  0 09:29 ?        00:00:17 calico-node -monitor-token
+root     3009634 3009631  0 09:29 ?        00:00:26 calico-node -status-reporter
+root     3009635 3009629  0 09:29 ?        00:00:27 calico-node -allocate-tunnel-addrs
+root     3009636 3009628  0 09:29 ?        00:00:25 calico-node -monitor-addresses
+root     3009637 3009632  1 09:29 ?        00:09:02 calico-node -felix
+root     3009847       1  0 09:29 ?        00:01:32 /snap/microk8s/6114/bin/containerd-shim-runc-v2 -namespace k8s.io -id 2d7cf4df7e994d329f92d2ff0351ed9d3df4e3a641fd4ab8ea1437d26b30b565 -address /var/snap/microk8s/common/run/containerd.sock
+65535    3009866 3009847  0 09:29 ?        00:00:00 /pause
+lxd      3009897 3009847  0 09:29 ?        00:01:22 /usr/bin/kube-controllers
+root     3027942       1  0 09:39 ?        00:00:32 /snap/microk8s/6114/bin/containerd-shim-runc-v2 -namespace k8s.io -id 81a04d7e69fcdac724c2ea923eb0b7f36f09a3e163a811e3c81c1dbdd7c79c79 -address /var/snap/microk8s/common/run/containerd.sock
+65535    3027963 3027942  0 09:39 ?        00:00:00 /pause
+root     3027992 3027942  0 09:39 ?        00:01:10 /dgw
+root     3033056       1  0 09:42 ?        00:00:33 /snap/microk8s/6114/bin/containerd-shim-runc-v2 -namespace k8s.io -id c8a120789c6fc5fc38ed5ef348683e3723139b41bbf65aca0c5b4a24b75b23ef -address /var/snap/microk8s/common/run/containerd.sock
+65535    3033076 3033056  0 09:42 ?        00:00:00 /pause
+root     3588032       1 12 16:18 ?        00:07:28 /snap/microk8s/6114/kubelite --scheduler-args-file=/var/snap/microk8s/6114/args/kube-scheduler --controller-manager-args-file=/var/snap/microk8s/6114/args/kube-controller-manager --proxy-args-file=/var/snap/microk8s/6114/args/kube-proxy --kubelet-args-file=/var/snap/microk8s/6114/args/kubelet --apiserver-args-file=/var/snap/microk8s/6114/args/kube-apiserver --kubeconfig-file=/var/snap/microk8s/6114/credentials/client.config --start-control-plane=true
+root     3601992       2  0 16:28 ?        00:00:01 [kworker/u4:0-events_unbound]
+root     3602145       2  0 16:28 ?        00:00:01 [kworker/u4:4-flush-8:0]
+root     3602620 2790467  0 16:29 ?        00:00:12 /hostpath-provisioner
+root     3634119       2  0 16:51 ?        00:00:00 [kworker/0:0-cgroup_destroy]
+root     3642565       2  0 16:57 ?        00:00:00 [kworker/1:1-events]
+root     3644625       2  0 16:58 ?        00:00:00 [kworker/u4:2-flush-8:0]
+root     3645563 3033056  0 16:59 ?        00:00:02 /nchf
+root     3658781       2  0 17:08 ?        00:00:00 [kworker/1:0-events]
+root     3661506       2  0 17:10 ?        00:00:00 [kworker/0:2-events]
+root     3666066       2  0 17:14 ?        00:00:00 [kworker/1:2-events]
+root     3668573       2  0 17:15 ?        00:00:00 [kworker/u4:1-events_unbound]
+root     3668574       2  0 17:15 ?        00:00:00 [kworker/0:1-events]
+ubuntu   3672802       1  3 17:18 ?        00:00:00 /lib/systemd/systemd --user
+root     3672803       2  0 17:18 ?        00:00:00 [kworker/1:3-cgroup_destroy]
+ubuntu   3672804 3672802  0 17:18 ?        00:00:00 (sd-pam)
+root     3672962     776  0 17:18 ?        00:00:00 sshd: ubuntu [priv]
+ubuntu   3673014 3672962  0 17:18 ?        00:00:00 sshd: ubuntu@notty
+root     3673015 3673014  0 17:18 ?        00:00:00 sudo microk8s.inspect
+root     3673016 3673015  8 17:18 ?        00:00:00 /bin/bash /snap/microk8s/6114/microk8s.wrapper inspect
+root     3673041 3673016  0 17:18 ?        00:00:00 sudo -E /snap/microk8s/6114/inspect.sh
+root     3673042 3673041  0 17:18 ?        00:00:00 bash /snap/microk8s/6114/inspect.sh
+root     3673159 2785185  0 17:18 ?        00:00:00 sleep 5
+root     3673269 3673042  0 17:18 ?        00:00:00 ps -ef

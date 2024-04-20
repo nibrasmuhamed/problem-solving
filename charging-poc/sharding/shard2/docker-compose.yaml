@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+  shard2s1:
+    container_name: shar21s2
+    image: mongo
+    command: mongod --shardsvr --replSet shard2rs --port 27017 --dbpath /data/db --bind_ip 0.0.0.0
+    ports:
+      - 60002:27017
+    volumes:
+      - shard2s1:/data/db
+
+  shard2s2:
+    container_name: shard2s3
+    image: mongo
+    command: mongod --shardsvr --replSet shard2rs --port 27017 --dbpath /data/db --bind_ip 0.0.0.0
+    ports:
+      - 60001:27017
+    volumes:
+      - shard2s2:/data/db
+
+volumes:
+  shard2s1: {}
+  shard2s2: {}
+
+# rs.initiate(
+#   {
+#     _id: "shard2rs",
+#     members: [
+#       { _id : 0, host : "192.168.0.100:60001" },
+#       { _id : 1, host : "192.168.0.100:60002" }
+#     ]
+#   }
+# )

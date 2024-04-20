@@ -1,0 +1,282 @@
+Oct 11 15:54:48 microk8s-vm systemd[1]: Started Service for snap application microk8s.daemon-k8s-dqlite.
+Oct 11 15:54:48 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + export PATH=/snap/microk8s/5896/usr/sbin:/snap/microk8s/5896/usr/bin:/snap/microk8s/5896/sbin:/snap/microk8s/5896/bin:/snap/microk8s/5896/usr/bin:/snap/microk8s/5896/bin:/snap/microk8s/5896/usr/sbin:/snap/microk8s/5896/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+Oct 11 15:54:48 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + PATH=/snap/microk8s/5896/usr/sbin:/snap/microk8s/5896/usr/bin:/snap/microk8s/5896/sbin:/snap/microk8s/5896/bin:/snap/microk8s/5896/usr/bin:/snap/microk8s/5896/bin:/snap/microk8s/5896/usr/sbin:/snap/microk8s/5896/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+Oct 11 15:54:48 microk8s-vm microk8s.daemon-k8s-dqlite[2578]: ++ /snap/microk8s/5896/bin/uname -m
+Oct 11 15:54:48 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + ARCH=aarch64
+Oct 11 15:54:48 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + export LD_LIBRARY_PATH=:/snap/microk8s/5896/lib:/snap/microk8s/5896/usr/lib:/snap/microk8s/5896/lib/aarch64-linux-gnu:/snap/microk8s/5896/usr/lib/aarch64-linux-gnu
+Oct 11 15:54:48 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + LD_LIBRARY_PATH=:/snap/microk8s/5896/lib:/snap/microk8s/5896/usr/lib:/snap/microk8s/5896/lib/aarch64-linux-gnu:/snap/microk8s/5896/usr/lib/aarch64-linux-gnu
+Oct 11 15:54:48 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + export LD_LIBRARY_PATH=/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void::/snap/microk8s/5896/lib:/snap/microk8s/5896/usr/lib:/snap/microk8s/5896/lib/aarch64-linux-gnu:/snap/microk8s/5896/usr/lib/aarch64-linux-gnu
+Oct 11 15:54:48 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + LD_LIBRARY_PATH=/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void::/snap/microk8s/5896/lib:/snap/microk8s/5896/usr/lib:/snap/microk8s/5896/lib/aarch64-linux-gnu:/snap/microk8s/5896/usr/lib/aarch64-linux-gnu
+Oct 11 15:54:48 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + export XDG_RUNTIME_DIR=/var/snap/microk8s/common/run
+Oct 11 15:54:48 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + XDG_RUNTIME_DIR=/var/snap/microk8s/common/run
+Oct 11 15:54:48 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + mkdir -p /var/snap/microk8s/common/run
+Oct 11 15:54:48 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + source /snap/microk8s/5896/actions/common/utils.sh
+Oct 11 15:54:48 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: ++ [[ /snap/microk8s/5896/run-k8s-dqlite-with-args == \/\s\n\a\p\/\m\i\c\r\o\k\8\s\/\5\8\9\6\/\a\c\t\i\o\n\s\/\c\o\m\m\o\n\/\u\t\i\l\s\.\s\h ]]
+Oct 11 15:54:48 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + exit_if_service_not_expected_to_start k8s-dqlite
+Oct 11 15:54:48 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + local service=k8s-dqlite
+Oct 11 15:54:48 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + '[' -f /var/snap/microk8s/5896/var/lock/no-k8s-dqlite ']'
+Oct 11 15:54:48 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + '[' -e /var/snap/microk8s/5896/var/lock/low-memory-guard.lock ']'
+Oct 11 15:54:48 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + app=k8s-dqlite
+Oct 11 15:54:48 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + '[' -e /var/snap/microk8s/5896/args/k8s-dqlite ']'
+Oct 11 15:54:48 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + sleep 6
+Oct 11 15:54:54 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + set -a
+Oct 11 15:54:54 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + '[' -e /var/snap/microk8s/5896/args/k8s-dqlite-env ']'
+Oct 11 15:54:54 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + . /var/snap/microk8s/5896/args/k8s-dqlite-env
+Oct 11 15:54:54 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + set +a
+Oct 11 15:54:54 microk8s-vm microk8s.daemon-k8s-dqlite[3200]: ++ cat /var/snap/microk8s/5896/args/k8s-dqlite
+Oct 11 15:54:54 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + declare -a 'args=(--storage-dir=${SNAP_DATA}/var/kubernetes/backend/
+Oct 11 15:54:54 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: --listen=unix://${SNAP_DATA}/var/kubernetes/backend/kine.sock:12379)'
+Oct 11 15:54:54 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: + exec /snap/microk8s/5896/bin/k8s-dqlite --storage-dir=/var/snap/microk8s/5896/var/kubernetes/backend/ --listen=unix:///var/snap/microk8s/5896/var/kubernetes/backend/kine.sock:12379
+Oct 11 15:54:55 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: time="2023-10-11T15:54:55+05:30" level=info msg="Starting dqlite"
+Oct 11 15:54:55 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: I1011 15:54:55.926110    2425 log.go:194] Failure domain set to 1
+Oct 11 15:54:55 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: I1011 15:54:55.926124    2425 log.go:194] TLS enabled
+Oct 11 15:54:55 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: I1011 15:54:55.928689    2425 log.go:194] Disable ClientSessionCache
+Oct 11 15:54:56 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: I1011 15:54:56.049348    2425 log.go:194] Connecting to kine endpoint: dqlite://k8s?peer-file=/var/snap/microk8s/5896/var/kubernetes/backend/localnode.yaml&driver-name=dqlite-1
+Oct 11 15:54:56 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: time="2023-10-11T15:54:56+05:30" level=info msg="New kine for dqlite."
+Oct 11 15:54:56 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: time="2023-10-11T15:54:56+05:30" level=info msg="DriverName is dqlite-1."
+Oct 11 15:54:56 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: time="2023-10-11T15:54:56+05:30" level=info msg="Kine listening on unix:///var/snap/microk8s/5896/var/kubernetes/backend/kine.sock:12379"
+Oct 12 14:41:04 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: time="2023-10-12T14:41:04+05:30" level=error msg="error in txn: query (try: 0): context deadline exceeded"
+Oct 12 14:41:13 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: time="2023-10-12T14:41:13+05:30" level=error msg="error in txn: query (try: 0): context deadline exceeded"
+Oct 12 14:41:14 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: time="2023-10-12T14:41:14+05:30" level=error msg="failed to list /registry/statefulsets/ for revision 1136"
+Oct 12 14:41:14 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: time="2023-10-12T14:41:14+05:30" level=error msg="failed to list /registry/certificatesigningrequests/ for revision 2"
+Oct 12 14:41:14 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: time="2023-10-12T14:41:14+05:30" level=error msg="failed to list /registry/replicasets/ for revision 1417"
+Oct 12 14:41:14 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: time="2023-10-12T14:41:14+05:30" level=error msg="failed to list /registry/resourcequotas/ for revision 2"
+Oct 12 14:41:14 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: time="2023-10-12T14:41:14+05:30" level=error msg="failed to list /registry/csinodes/ for revision 142"
+Oct 12 14:41:14 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: time="2023-10-12T14:41:14+05:30" level=error msg="failed to list /registry/priorityclasses/ for revision 132"
+Oct 12 14:41:14 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: time="2023-10-12T14:41:14+05:30" level=error msg="failed to list /registry/resourcequotas/ for revision 2"
+Oct 12 14:41:14 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: time="2023-10-12T14:41:14+05:30" level=error msg="failed to list /registry/csinodes/ for revision 142"
+Oct 12 14:41:14 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: time="2023-10-12T14:41:14+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/networkpolicies/ for revision 196"
+Oct 12 14:41:14 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: time="2023-10-12T14:41:14+05:30" level=error msg="failed to list /registry/statefulsets/ for revision 1136"
+Oct 12 14:41:14 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: time="2023-10-12T14:41:14+05:30" level=error msg="failed to list /registry/certificatesigningrequests/ for revision 2"
+Oct 12 14:41:14 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: time="2023-10-12T14:41:14+05:30" level=error msg="failed to list /registry/replicasets/ for revision 1417"
+Oct 12 14:41:14 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: time="2023-10-12T14:41:14+05:30" level=error msg="failed to list /registry/priorityclasses/ for revision 132"
+Oct 12 14:41:15 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: time="2023-10-12T14:41:15+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/networkpolicies/ for revision 196"
+Oct 18 12:22:05 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: time="2023-10-18T12:22:05+05:30" level=error msg="error while range on /registry/health : query (try: 0): context deadline exceeded"
+Oct 19 12:14:40 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: time="2023-10-19T12:14:40+05:30" level=info msg="Shutting down\n"
+Oct 19 12:14:40 microk8s-vm systemd[1]: Stopping Service for snap application microk8s.daemon-k8s-dqlite...
+Oct 19 12:14:41 microk8s-vm microk8s.daemon-k8s-dqlite[2425]: time="2023-10-19T12:14:41+05:30" level=info msg="Dqlite stopped\n"
+Oct 19 12:14:41 microk8s-vm systemd[1]: snap.microk8s.daemon-k8s-dqlite.service: Deactivated successfully.
+Oct 19 12:14:41 microk8s-vm systemd[1]: Stopped Service for snap application microk8s.daemon-k8s-dqlite.
+Oct 19 12:14:41 microk8s-vm systemd[1]: snap.microk8s.daemon-k8s-dqlite.service: Consumed 3h 4min 25.526s CPU time.
+Oct 19 12:14:48 microk8s-vm systemd[1]: Started Service for snap application microk8s.daemon-k8s-dqlite.
+Oct 19 12:14:48 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + export PATH=/snap/microk8s/6072/usr/sbin:/snap/microk8s/6072/usr/bin:/snap/microk8s/6072/sbin:/snap/microk8s/6072/bin:/snap/microk8s/6072/usr/bin:/snap/microk8s/6072/bin:/snap/microk8s/6072/usr/sbin:/snap/microk8s/6072/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+Oct 19 12:14:48 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + PATH=/snap/microk8s/6072/usr/sbin:/snap/microk8s/6072/usr/bin:/snap/microk8s/6072/sbin:/snap/microk8s/6072/bin:/snap/microk8s/6072/usr/bin:/snap/microk8s/6072/bin:/snap/microk8s/6072/usr/sbin:/snap/microk8s/6072/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+Oct 19 12:14:48 microk8s-vm microk8s.daemon-k8s-dqlite[3293421]: ++ /snap/microk8s/6072/bin/uname -m
+Oct 19 12:14:48 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + ARCH=aarch64
+Oct 19 12:14:48 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + export LD_LIBRARY_PATH=:/snap/microk8s/6072/lib:/snap/microk8s/6072/usr/lib:/snap/microk8s/6072/lib/aarch64-linux-gnu:/snap/microk8s/6072/usr/lib/aarch64-linux-gnu
+Oct 19 12:14:48 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + LD_LIBRARY_PATH=:/snap/microk8s/6072/lib:/snap/microk8s/6072/usr/lib:/snap/microk8s/6072/lib/aarch64-linux-gnu:/snap/microk8s/6072/usr/lib/aarch64-linux-gnu
+Oct 19 12:14:48 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + export LD_LIBRARY_PATH=/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void::/snap/microk8s/6072/lib:/snap/microk8s/6072/usr/lib:/snap/microk8s/6072/lib/aarch64-linux-gnu:/snap/microk8s/6072/usr/lib/aarch64-linux-gnu
+Oct 19 12:14:48 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + LD_LIBRARY_PATH=/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void::/snap/microk8s/6072/lib:/snap/microk8s/6072/usr/lib:/snap/microk8s/6072/lib/aarch64-linux-gnu:/snap/microk8s/6072/usr/lib/aarch64-linux-gnu
+Oct 19 12:14:48 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + export XDG_RUNTIME_DIR=/var/snap/microk8s/common/run
+Oct 19 12:14:48 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + XDG_RUNTIME_DIR=/var/snap/microk8s/common/run
+Oct 19 12:14:48 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + mkdir -p /var/snap/microk8s/common/run
+Oct 19 12:14:48 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + source /snap/microk8s/6072/actions/common/utils.sh
+Oct 19 12:14:48 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: ++ [[ /snap/microk8s/6072/run-k8s-dqlite-with-args == \/\s\n\a\p\/\m\i\c\r\o\k\8\s\/\6\0\7\2\/\a\c\t\i\o\n\s\/\c\o\m\m\o\n\/\u\t\i\l\s\.\s\h ]]
+Oct 19 12:14:48 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + exit_if_service_not_expected_to_start k8s-dqlite
+Oct 19 12:14:48 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + local service=k8s-dqlite
+Oct 19 12:14:48 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + '[' -f /var/snap/microk8s/6072/var/lock/no-k8s-dqlite ']'
+Oct 19 12:14:48 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + '[' -e /var/snap/microk8s/6072/var/lock/low-memory-guard.lock ']'
+Oct 19 12:14:48 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + app=k8s-dqlite
+Oct 19 12:14:48 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + '[' -e /var/snap/microk8s/6072/args/k8s-dqlite ']'
+Oct 19 12:14:48 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + sleep 6
+Oct 19 12:14:54 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + set -a
+Oct 19 12:14:54 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + '[' -e /var/snap/microk8s/6072/args/k8s-dqlite-env ']'
+Oct 19 12:14:54 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + . /var/snap/microk8s/6072/args/k8s-dqlite-env
+Oct 19 12:14:54 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + set +a
+Oct 19 12:14:54 microk8s-vm microk8s.daemon-k8s-dqlite[3294177]: ++ cat /var/snap/microk8s/6072/args/k8s-dqlite
+Oct 19 12:14:54 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + declare -a 'args=(--storage-dir=${SNAP_DATA}/var/kubernetes/backend/
+Oct 19 12:14:54 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: --listen=unix://${SNAP_DATA}/var/kubernetes/backend/kine.sock:12379)'
+Oct 19 12:14:54 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: + exec /snap/microk8s/6072/bin/k8s-dqlite --storage-dir=/var/snap/microk8s/6072/var/kubernetes/backend/ --listen=unix:///var/snap/microk8s/6072/var/kubernetes/backend/kine.sock:12379
+Oct 19 12:14:57 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: time="2023-10-19T12:14:57+05:30" level=info msg="Starting dqlite"
+Oct 19 12:14:57 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: I1019 12:14:57.519184 3293303 log.go:194] Failure domain set to 1
+Oct 19 12:14:57 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: I1019 12:14:57.519256 3293303 log.go:194] TLS enabled
+Oct 19 12:14:57 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: I1019 12:14:57.524504 3293303 log.go:194] Disable ClientSessionCache
+Oct 19 12:15:00 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: I1019 12:15:00.185239 3293303 log.go:194] Connecting to kine endpoint: dqlite://k8s?peer-file=/var/snap/microk8s/6072/var/kubernetes/backend/localnode.yaml&driver-name=dqlite-1
+Oct 19 12:15:00 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: time="2023-10-19T12:15:00+05:30" level=info msg="New kine for dqlite."
+Oct 19 12:15:00 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: time="2023-10-19T12:15:00+05:30" level=info msg="DriverName is dqlite-1."
+Oct 19 12:15:00 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: time="2023-10-19T12:15:00+05:30" level=info msg="Kine listening on unix:///var/snap/microk8s/6072/var/kubernetes/backend/kine.sock:12379"
+Oct 20 09:34:19 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: time="2023-10-20T09:34:19+05:30" level=error msg="failed to list /registry/podtemplates/ for revision 254411"
+Oct 20 09:34:19 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: time="2023-10-20T09:34:19+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/ippools/ for revision 254413"
+Oct 20 09:34:19 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: time="2023-10-20T09:34:19+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/globalnetworkpolicies/ for revision 254414"
+Oct 20 09:34:19 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: time="2023-10-20T09:34:19+05:30" level=error msg="failed to list /registry/apiregistration.k8s.io/apiservices/ for revision 254411"
+Oct 20 09:34:19 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: time="2023-10-20T09:34:19+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/globalnetworkpolicies/ for revision 254414"
+Oct 20 09:34:19 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: time="2023-10-20T09:34:19+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/ippools/ for revision 254413"
+Oct 20 09:34:19 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: time="2023-10-20T09:34:19+05:30" level=error msg="failed to list /registry/podtemplates/ for revision 254411"
+Oct 20 09:34:20 microk8s-vm microk8s.daemon-k8s-dqlite[3293303]: time="2023-10-20T09:34:20+05:30" level=error msg="failed to list /registry/apiregistration.k8s.io/apiservices/ for revision 254411"
+-- Boot 5bc4623b22d948e5a5475800c9e3ac28 --
+Oct 20 12:34:24 microk8s-vm systemd[1]: Started Service for snap application microk8s.daemon-k8s-dqlite.
+Oct 20 12:34:27 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + export PATH=/snap/microk8s/6072/usr/sbin:/snap/microk8s/6072/usr/bin:/snap/microk8s/6072/sbin:/snap/microk8s/6072/bin:/snap/microk8s/6072/usr/bin:/snap/microk8s/6072/bin:/snap/microk8s/6072/usr/sbin:/snap/microk8s/6072/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+Oct 20 12:34:27 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + PATH=/snap/microk8s/6072/usr/sbin:/snap/microk8s/6072/usr/bin:/snap/microk8s/6072/sbin:/snap/microk8s/6072/bin:/snap/microk8s/6072/usr/bin:/snap/microk8s/6072/bin:/snap/microk8s/6072/usr/sbin:/snap/microk8s/6072/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+Oct 20 12:34:27 microk8s-vm microk8s.daemon-k8s-dqlite[905]: ++ /snap/microk8s/6072/bin/uname -m
+Oct 20 12:34:27 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + ARCH=aarch64
+Oct 20 12:34:27 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + export LD_LIBRARY_PATH=:/snap/microk8s/6072/lib:/snap/microk8s/6072/usr/lib:/snap/microk8s/6072/lib/aarch64-linux-gnu:/snap/microk8s/6072/usr/lib/aarch64-linux-gnu
+Oct 20 12:34:27 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + LD_LIBRARY_PATH=:/snap/microk8s/6072/lib:/snap/microk8s/6072/usr/lib:/snap/microk8s/6072/lib/aarch64-linux-gnu:/snap/microk8s/6072/usr/lib/aarch64-linux-gnu
+Oct 20 12:34:27 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + export LD_LIBRARY_PATH=/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void::/snap/microk8s/6072/lib:/snap/microk8s/6072/usr/lib:/snap/microk8s/6072/lib/aarch64-linux-gnu:/snap/microk8s/6072/usr/lib/aarch64-linux-gnu
+Oct 20 12:34:27 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + LD_LIBRARY_PATH=/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void::/snap/microk8s/6072/lib:/snap/microk8s/6072/usr/lib:/snap/microk8s/6072/lib/aarch64-linux-gnu:/snap/microk8s/6072/usr/lib/aarch64-linux-gnu
+Oct 20 12:34:27 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + export XDG_RUNTIME_DIR=/var/snap/microk8s/common/run
+Oct 20 12:34:27 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + XDG_RUNTIME_DIR=/var/snap/microk8s/common/run
+Oct 20 12:34:27 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + mkdir -p /var/snap/microk8s/common/run
+Oct 20 12:34:27 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + source /snap/microk8s/6072/actions/common/utils.sh
+Oct 20 12:34:27 microk8s-vm microk8s.daemon-k8s-dqlite[713]: ++ [[ /snap/microk8s/6072/run-k8s-dqlite-with-args == \/\s\n\a\p\/\m\i\c\r\o\k\8\s\/\6\0\7\2\/\a\c\t\i\o\n\s\/\c\o\m\m\o\n\/\u\t\i\l\s\.\s\h ]]
+Oct 20 12:34:27 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + exit_if_service_not_expected_to_start k8s-dqlite
+Oct 20 12:34:27 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + local service=k8s-dqlite
+Oct 20 12:34:27 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + '[' -f /var/snap/microk8s/6072/var/lock/no-k8s-dqlite ']'
+Oct 20 12:34:27 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + '[' -e /var/snap/microk8s/6072/var/lock/low-memory-guard.lock ']'
+Oct 20 12:34:27 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + app=k8s-dqlite
+Oct 20 12:34:27 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + '[' -e /var/snap/microk8s/6072/args/k8s-dqlite ']'
+Oct 20 12:34:27 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + sleep 6
+Oct 20 12:34:33 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + set -a
+Oct 20 12:34:33 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + '[' -e /var/snap/microk8s/6072/args/k8s-dqlite-env ']'
+Oct 20 12:34:33 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + . /var/snap/microk8s/6072/args/k8s-dqlite-env
+Oct 20 12:34:33 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + set +a
+Oct 20 12:34:33 microk8s-vm microk8s.daemon-k8s-dqlite[1462]: ++ cat /var/snap/microk8s/6072/args/k8s-dqlite
+Oct 20 12:34:33 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + declare -a 'args=(--storage-dir=${SNAP_DATA}/var/kubernetes/backend/
+Oct 20 12:34:33 microk8s-vm microk8s.daemon-k8s-dqlite[713]: --listen=unix://${SNAP_DATA}/var/kubernetes/backend/kine.sock:12379)'
+Oct 20 12:34:33 microk8s-vm microk8s.daemon-k8s-dqlite[713]: + exec /snap/microk8s/6072/bin/k8s-dqlite --storage-dir=/var/snap/microk8s/6072/var/kubernetes/backend/ --listen=unix:///var/snap/microk8s/6072/var/kubernetes/backend/kine.sock:12379
+Oct 20 12:34:35 microk8s-vm microk8s.daemon-k8s-dqlite[713]: time="2023-10-20T12:34:35+05:30" level=info msg="Starting dqlite"
+Oct 20 12:34:35 microk8s-vm microk8s.daemon-k8s-dqlite[713]: I1020 12:34:35.491982     713 log.go:194] Failure domain set to 1
+Oct 20 12:34:35 microk8s-vm microk8s.daemon-k8s-dqlite[713]: I1020 12:34:35.492004     713 log.go:194] TLS enabled
+Oct 20 12:34:35 microk8s-vm microk8s.daemon-k8s-dqlite[713]: I1020 12:34:35.494855     713 log.go:194] Disable ClientSessionCache
+Oct 20 12:34:39 microk8s-vm microk8s.daemon-k8s-dqlite[713]: I1020 12:34:39.869786     713 log.go:194] Connecting to kine endpoint: dqlite://k8s?peer-file=/var/snap/microk8s/6072/var/kubernetes/backend/localnode.yaml&driver-name=dqlite-1
+Oct 20 12:34:39 microk8s-vm microk8s.daemon-k8s-dqlite[713]: time="2023-10-20T12:34:39+05:30" level=info msg="New kine for dqlite."
+Oct 20 12:34:39 microk8s-vm microk8s.daemon-k8s-dqlite[713]: time="2023-10-20T12:34:39+05:30" level=info msg="DriverName is dqlite-1."
+Oct 20 12:34:39 microk8s-vm microk8s.daemon-k8s-dqlite[713]: time="2023-10-20T12:34:39+05:30" level=info msg="Kine listening on unix:///var/snap/microk8s/6072/var/kubernetes/backend/kine.sock:12379"
+Oct 22 13:41:35 microk8s-vm microk8s.daemon-k8s-dqlite[713]: time="2023-10-22T13:41:35+05:30" level=info msg="Shutting down\n"
+Oct 22 13:41:35 microk8s-vm systemd[1]: Stopping Service for snap application microk8s.daemon-k8s-dqlite...
+Oct 22 13:41:35 microk8s-vm microk8s.daemon-k8s-dqlite[713]: time="2023-10-22T13:41:35+05:30" level=info msg="Dqlite stopped\n"
+Oct 22 13:41:35 microk8s-vm systemd[1]: snap.microk8s.daemon-k8s-dqlite.service: Deactivated successfully.
+Oct 22 13:41:35 microk8s-vm systemd[1]: Stopped Service for snap application microk8s.daemon-k8s-dqlite.
+Oct 22 13:41:35 microk8s-vm systemd[1]: snap.microk8s.daemon-k8s-dqlite.service: Consumed 24min 11.925s CPU time.
+-- Boot 033baa807a4541fa8f6e1919c5e82879 --
+Nov 02 16:11:21 microk8s-vm systemd[1]: Started Service for snap application microk8s.daemon-k8s-dqlite.
+Nov 02 16:11:23 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + export PATH=/snap/microk8s/6072/usr/sbin:/snap/microk8s/6072/usr/bin:/snap/microk8s/6072/sbin:/snap/microk8s/6072/bin:/snap/microk8s/6072/usr/bin:/snap/microk8s/6072/bin:/snap/microk8s/6072/usr/sbin:/snap/microk8s/6072/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+Nov 02 16:11:23 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + PATH=/snap/microk8s/6072/usr/sbin:/snap/microk8s/6072/usr/bin:/snap/microk8s/6072/sbin:/snap/microk8s/6072/bin:/snap/microk8s/6072/usr/bin:/snap/microk8s/6072/bin:/snap/microk8s/6072/usr/sbin:/snap/microk8s/6072/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+Nov 02 16:11:23 microk8s-vm microk8s.daemon-k8s-dqlite[918]: ++ /snap/microk8s/6072/bin/uname -m
+Nov 02 16:11:23 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + ARCH=aarch64
+Nov 02 16:11:23 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + export LD_LIBRARY_PATH=:/snap/microk8s/6072/lib:/snap/microk8s/6072/usr/lib:/snap/microk8s/6072/lib/aarch64-linux-gnu:/snap/microk8s/6072/usr/lib/aarch64-linux-gnu
+Nov 02 16:11:23 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + LD_LIBRARY_PATH=:/snap/microk8s/6072/lib:/snap/microk8s/6072/usr/lib:/snap/microk8s/6072/lib/aarch64-linux-gnu:/snap/microk8s/6072/usr/lib/aarch64-linux-gnu
+Nov 02 16:11:23 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + export LD_LIBRARY_PATH=/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void::/snap/microk8s/6072/lib:/snap/microk8s/6072/usr/lib:/snap/microk8s/6072/lib/aarch64-linux-gnu:/snap/microk8s/6072/usr/lib/aarch64-linux-gnu
+Nov 02 16:11:23 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + LD_LIBRARY_PATH=/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void::/snap/microk8s/6072/lib:/snap/microk8s/6072/usr/lib:/snap/microk8s/6072/lib/aarch64-linux-gnu:/snap/microk8s/6072/usr/lib/aarch64-linux-gnu
+Nov 02 16:11:23 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + export XDG_RUNTIME_DIR=/var/snap/microk8s/common/run
+Nov 02 16:11:23 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + XDG_RUNTIME_DIR=/var/snap/microk8s/common/run
+Nov 02 16:11:23 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + mkdir -p /var/snap/microk8s/common/run
+Nov 02 16:11:23 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + source /snap/microk8s/6072/actions/common/utils.sh
+Nov 02 16:11:23 microk8s-vm microk8s.daemon-k8s-dqlite[712]: ++ [[ /snap/microk8s/6072/run-k8s-dqlite-with-args == \/\s\n\a\p\/\m\i\c\r\o\k\8\s\/\6\0\7\2\/\a\c\t\i\o\n\s\/\c\o\m\m\o\n\/\u\t\i\l\s\.\s\h ]]
+Nov 02 16:11:23 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + exit_if_service_not_expected_to_start k8s-dqlite
+Nov 02 16:11:23 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + local service=k8s-dqlite
+Nov 02 16:11:23 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + '[' -f /var/snap/microk8s/6072/var/lock/no-k8s-dqlite ']'
+Nov 02 16:11:23 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + '[' -e /var/snap/microk8s/6072/var/lock/low-memory-guard.lock ']'
+Nov 02 16:11:23 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + app=k8s-dqlite
+Nov 02 16:11:23 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + '[' -e /var/snap/microk8s/6072/args/k8s-dqlite ']'
+Nov 02 16:11:23 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + sleep 6
+Nov 02 16:11:29 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + set -a
+Nov 02 16:11:29 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + '[' -e /var/snap/microk8s/6072/args/k8s-dqlite-env ']'
+Nov 02 16:11:29 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + . /var/snap/microk8s/6072/args/k8s-dqlite-env
+Nov 02 16:11:29 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + set +a
+Nov 02 16:11:29 microk8s-vm microk8s.daemon-k8s-dqlite[1434]: ++ cat /var/snap/microk8s/6072/args/k8s-dqlite
+Nov 02 16:11:29 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + declare -a 'args=(--storage-dir=${SNAP_DATA}/var/kubernetes/backend/
+Nov 02 16:11:29 microk8s-vm microk8s.daemon-k8s-dqlite[712]: --listen=unix://${SNAP_DATA}/var/kubernetes/backend/kine.sock:12379)'
+Nov 02 16:11:29 microk8s-vm microk8s.daemon-k8s-dqlite[712]: + exec /snap/microk8s/6072/bin/k8s-dqlite --storage-dir=/var/snap/microk8s/6072/var/kubernetes/backend/ --listen=unix:///var/snap/microk8s/6072/var/kubernetes/backend/kine.sock:12379
+Nov 02 16:11:30 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-02T16:11:30+05:30" level=info msg="Starting dqlite"
+Nov 02 16:11:30 microk8s-vm microk8s.daemon-k8s-dqlite[712]: I1102 16:11:30.477971     712 log.go:194] Failure domain set to 1
+Nov 02 16:11:30 microk8s-vm microk8s.daemon-k8s-dqlite[712]: I1102 16:11:30.478059     712 log.go:194] TLS enabled
+Nov 02 16:11:30 microk8s-vm microk8s.daemon-k8s-dqlite[712]: I1102 16:11:30.480648     712 log.go:194] Disable ClientSessionCache
+Nov 02 16:11:31 microk8s-vm microk8s.daemon-k8s-dqlite[712]: I1102 16:11:31.531844     712 log.go:194] Connecting to kine endpoint: dqlite://k8s?peer-file=/var/snap/microk8s/6072/var/kubernetes/backend/localnode.yaml&driver-name=dqlite-1
+Nov 02 16:11:31 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-02T16:11:31+05:30" level=info msg="New kine for dqlite."
+Nov 02 16:11:31 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-02T16:11:31+05:30" level=info msg="DriverName is dqlite-1."
+Nov 02 16:11:31 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-02T16:11:31+05:30" level=info msg="Kine listening on unix:///var/snap/microk8s/6072/var/kubernetes/backend/kine.sock:12379"
+Nov 03 13:37:47 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-03T13:37:47+05:30" level=error msg="failed to list /registry/poddisruptionbudgets/ for revision 345075"
+Nov 03 13:37:47 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-03T13:37:47+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/ipamhandles/ for revision 348409"
+Nov 03 13:37:48 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-03T13:37:48+05:30" level=error msg="failed to list /registry/certificatesigningrequests/ for revision 345075"
+Nov 03 13:37:49 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-03T13:37:49+05:30" level=error msg="failed to list /registry/volumeattachments/ for revision 345075"
+Nov 03 13:37:49 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-03T13:37:49+05:30" level=error msg="failed to list /registry/certificatesigningrequests/ for revision 345075"
+Nov 03 13:37:49 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-03T13:37:49+05:30" level=error msg="failed to list /registry/volumeattachments/ for revision 345075"
+Nov 03 13:37:49 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-03T13:37:49+05:30" level=error msg="failed to list /registry/poddisruptionbudgets/ for revision 345075"
+Nov 03 13:37:49 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-03T13:37:49+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/ipamhandles/ for revision 348409"
+Nov 03 15:54:52 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-03T15:54:52+05:30" level=error msg="error while range on /registry/crd.projectcalico.org/clusterinformations/default : query (try: 0): context canceled"
+Nov 07 11:45:45 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-07T11:45:45+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/hostendpoints/ for revision 345134"
+Nov 07 11:45:45 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-07T11:45:45+05:30" level=error msg="failed to list /registry/csinodes/ for revision 345075"
+Nov 07 11:45:50 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-07T11:45:50+05:30" level=error msg="failed to list /registry/csinodes/ for revision 345075"
+Nov 07 11:45:50 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-07T11:45:50+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/hostendpoints/ for revision 345134"
+Nov 07 11:45:51 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-07T11:45:50+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/hostendpoints/ for revision 345134"
+Nov 07 11:45:51 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-07T11:45:51+05:30" level=error msg="failed to list /registry/csinodes/ for revision 345075"
+Nov 08 16:14:55 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-08T16:14:55+05:30" level=error msg="error while range on /registry/services/endpoints/kube-system/microk8s.io-hostpath : query (try: 0): failed to create dqlite connection: no available dqlite leader server found"
+Nov 08 16:14:55 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-08T16:14:55+05:30" level=error msg="failed to list /registry/storageclasses/ for revision 348173"
+Nov 08 16:14:55 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-08T16:14:55+05:30" level=error msg="failed to list /registry/storageclasses/ for revision 348173"
+Nov 09 12:00:29 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-09T12:00:29+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/blockaffinities/ for revision 345147"
+Nov 09 12:00:30 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-09T12:00:30+05:30" level=error msg="failed to list /registry/ingressclasses/ for revision 345075"
+Nov 09 12:00:30 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-09T12:00:30+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/hostendpoints/ for revision 449650"
+Nov 09 12:00:30 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-09T12:00:30+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/globalnetworksets/ for revision 345134"
+Nov 09 12:00:30 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-09T12:00:30+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/ipamhandles/ for revision 478382"
+Nov 09 12:00:30 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-09T12:00:30+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/hostendpoints/ for revision 449650"
+Nov 09 12:00:30 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-09T12:00:30+05:30" level=error msg="failed to list /registry/ingress/ for revision 390024"
+Nov 09 12:00:30 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-09T12:00:30+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/globalnetworksets/ for revision 345134"
+Nov 09 12:00:30 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-09T12:00:30+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/blockaffinities/ for revision 345147"
+Nov 09 12:00:30 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-09T12:00:30+05:30" level=error msg="failed to list /registry/ingressclasses/ for revision 345075"
+Nov 09 12:00:30 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-09T12:00:30+05:30" level=error msg="failed to list /registry/ingress/ for revision 390024"
+Nov 09 12:00:30 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-09T12:00:30+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/ipamhandles/ for revision 478382"
+Nov 11 22:52:14 microk8s-vm systemd[1]: Stopping Service for snap application microk8s.daemon-k8s-dqlite...
+Nov 11 22:52:14 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-11T22:52:14+05:30" level=info msg="Shutting down\n"
+Nov 11 22:52:16 microk8s-vm microk8s.daemon-k8s-dqlite[712]: time="2023-11-11T22:52:16+05:30" level=info msg="Dqlite stopped\n"
+Nov 11 22:52:16 microk8s-vm systemd[1]: snap.microk8s.daemon-k8s-dqlite.service: Deactivated successfully.
+Nov 11 22:52:16 microk8s-vm systemd[1]: Stopped Service for snap application microk8s.daemon-k8s-dqlite.
+Nov 11 22:52:16 microk8s-vm systemd[1]: snap.microk8s.daemon-k8s-dqlite.service: Consumed 2h 47min 7.086s CPU time.
+Nov 11 22:52:35 microk8s-vm systemd[1]: Started Service for snap application microk8s.daemon-k8s-dqlite.
+Nov 11 22:52:37 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + export PATH=/snap/microk8s/6114/usr/sbin:/snap/microk8s/6114/usr/bin:/snap/microk8s/6114/sbin:/snap/microk8s/6114/bin:/snap/microk8s/6114/usr/bin:/snap/microk8s/6114/bin:/snap/microk8s/6114/usr/sbin:/snap/microk8s/6114/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+Nov 11 22:52:37 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + PATH=/snap/microk8s/6114/usr/sbin:/snap/microk8s/6114/usr/bin:/snap/microk8s/6114/sbin:/snap/microk8s/6114/bin:/snap/microk8s/6114/usr/bin:/snap/microk8s/6114/bin:/snap/microk8s/6114/usr/sbin:/snap/microk8s/6114/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+Nov 11 22:52:37 microk8s-vm microk8s.daemon-k8s-dqlite[2785302]: ++ /snap/microk8s/6114/bin/uname -m
+Nov 11 22:52:37 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + ARCH=aarch64
+Nov 11 22:52:37 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + export LD_LIBRARY_PATH=:/snap/microk8s/6114/lib:/snap/microk8s/6114/usr/lib:/snap/microk8s/6114/lib/aarch64-linux-gnu:/snap/microk8s/6114/usr/lib/aarch64-linux-gnu
+Nov 11 22:52:37 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + LD_LIBRARY_PATH=:/snap/microk8s/6114/lib:/snap/microk8s/6114/usr/lib:/snap/microk8s/6114/lib/aarch64-linux-gnu:/snap/microk8s/6114/usr/lib/aarch64-linux-gnu
+Nov 11 22:52:37 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + export LD_LIBRARY_PATH=/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void::/snap/microk8s/6114/lib:/snap/microk8s/6114/usr/lib:/snap/microk8s/6114/lib/aarch64-linux-gnu:/snap/microk8s/6114/usr/lib/aarch64-linux-gnu
+Nov 11 22:52:37 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + LD_LIBRARY_PATH=/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void::/snap/microk8s/6114/lib:/snap/microk8s/6114/usr/lib:/snap/microk8s/6114/lib/aarch64-linux-gnu:/snap/microk8s/6114/usr/lib/aarch64-linux-gnu
+Nov 11 22:52:37 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + export XDG_RUNTIME_DIR=/var/snap/microk8s/common/run
+Nov 11 22:52:37 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + XDG_RUNTIME_DIR=/var/snap/microk8s/common/run
+Nov 11 22:52:37 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + mkdir -p /var/snap/microk8s/common/run
+Nov 11 22:52:37 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + source /snap/microk8s/6114/actions/common/utils.sh
+Nov 11 22:52:37 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: ++ [[ /snap/microk8s/6114/run-k8s-dqlite-with-args == \/\s\n\a\p\/\m\i\c\r\o\k\8\s\/\6\1\1\4\/\a\c\t\i\o\n\s\/\c\o\m\m\o\n\/\u\t\i\l\s\.\s\h ]]
+Nov 11 22:52:37 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + exit_if_service_not_expected_to_start k8s-dqlite
+Nov 11 22:52:37 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + local service=k8s-dqlite
+Nov 11 22:52:37 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + '[' -f /var/snap/microk8s/6114/var/lock/no-k8s-dqlite ']'
+Nov 11 22:52:37 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + '[' -e /var/snap/microk8s/6114/var/lock/low-memory-guard.lock ']'
+Nov 11 22:52:37 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + app=k8s-dqlite
+Nov 11 22:52:37 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + '[' -e /var/snap/microk8s/6114/args/k8s-dqlite ']'
+Nov 11 22:52:37 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + sleep 6
+Nov 11 23:10:33 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + set -a
+Nov 11 23:10:33 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + '[' -e /var/snap/microk8s/6114/args/k8s-dqlite-env ']'
+Nov 11 23:10:33 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + . /var/snap/microk8s/6114/args/k8s-dqlite-env
+Nov 11 23:10:33 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + set +a
+Nov 11 23:10:33 microk8s-vm microk8s.daemon-k8s-dqlite[2785804]: ++ cat /var/snap/microk8s/6114/args/k8s-dqlite
+Nov 11 23:10:33 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + declare -a 'args=(--storage-dir=${SNAP_DATA}/var/kubernetes/backend/
+Nov 11 23:10:33 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: --listen=unix://${SNAP_DATA}/var/kubernetes/backend/kine.sock:12379)'
+Nov 11 23:10:33 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: + exec /snap/microk8s/6114/bin/k8s-dqlite --storage-dir=/var/snap/microk8s/6114/var/kubernetes/backend/ --listen=unix:///var/snap/microk8s/6114/var/kubernetes/backend/kine.sock:12379
+Nov 11 23:10:35 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-11T23:10:35+05:30" level=info msg="Starting dqlite"
+Nov 11 23:10:35 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: I1111 23:10:35.370810 2785183 log.go:194] Failure domain set to 1
+Nov 11 23:10:35 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: I1111 23:10:35.371377 2785183 log.go:194] TLS enabled
+Nov 11 23:10:35 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: I1111 23:10:35.375554 2785183 log.go:194] Disable ClientSessionCache
+Nov 11 23:10:38 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: I1111 23:10:38.180323 2785183 log.go:194] Connecting to kine endpoint: dqlite://k8s?peer-file=/var/snap/microk8s/6114/var/kubernetes/backend/localnode.yaml&driver-name=dqlite-1
+Nov 11 23:10:38 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-11T23:10:38+05:30" level=info msg="New kine for dqlite."
+Nov 11 23:10:38 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-11T23:10:38+05:30" level=info msg="DriverName is dqlite-1."
+Nov 11 23:10:38 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-11T23:10:38+05:30" level=info msg="Kine listening on unix:///var/snap/microk8s/6114/var/kubernetes/backend/kine.sock:12379"
+Nov 13 10:17:51 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-13T10:17:50+05:30" level=error msg="error in txn: query (try: 0): context deadline exceeded"
+Nov 14 16:24:09 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-14T16:24:09+05:30" level=error msg="error while range on /registry/crd.projectcalico.org/clusterinformations/default : context canceled"
+Nov 15 16:18:38 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-15T16:18:38+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/globalnetworksets/ for revision 558339"
+Nov 15 16:18:38 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-15T16:18:38+05:30" level=error msg="failed to list /registry/ingressclasses/ for revision 558289"
+Nov 15 16:18:38 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-15T16:18:38+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/hostendpoints/ for revision 558342"
+Nov 15 16:18:38 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-15T16:18:38+05:30" level=error msg="failed to list /registry/csinodes/ for revision 558289"
+Nov 15 16:18:38 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-15T16:18:38+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/ipamconfigs/ for revision 558339"
+Nov 15 16:18:39 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-15T16:18:39+05:30" level=error msg="failed to list /registry/volumeattachments/ for revision 558289"
+Nov 15 16:18:39 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-15T16:18:39+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/ipamhandles/ for revision 576658"
+Nov 15 16:18:39 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-15T16:18:39+05:30" level=error msg="failed to list /registry/horizontalpodautoscalers/ for revision 558289"
+Nov 15 16:18:39 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-15T16:18:39+05:30" level=error msg="failed to list /registry/storageclasses/ for revision 558289"
+Nov 15 16:18:39 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-15T16:18:39+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/ipamhandles/ for revision 576658"
+Nov 15 16:18:39 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-15T16:18:39+05:30" level=error msg="failed to list /registry/poddisruptionbudgets/ for revision 574838"
+Nov 15 16:18:39 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-15T16:18:39+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/ipamconfigs/ for revision 558339"
+Nov 15 16:18:39 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-15T16:18:39+05:30" level=error msg="failed to list /registry/csinodes/ for revision 558289"
+Nov 15 16:18:39 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-15T16:18:39+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/globalnetworksets/ for revision 558339"
+Nov 15 16:18:39 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-15T16:18:39+05:30" level=error msg="failed to list /registry/volumeattachments/ for revision 558289"
+Nov 15 16:18:39 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-15T16:18:39+05:30" level=error msg="failed to list /registry/crd.projectcalico.org/hostendpoints/ for revision 558342"
+Nov 15 16:18:39 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-15T16:18:39+05:30" level=error msg="failed to list /registry/ingressclasses/ for revision 558289"
+Nov 15 16:18:39 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-15T16:18:39+05:30" level=error msg="failed to list /registry/storageclasses/ for revision 558289"
+Nov 15 16:18:39 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-15T16:18:39+05:30" level=error msg="failed to list /registry/horizontalpodautoscalers/ for revision 558289"
+Nov 15 16:18:39 microk8s-vm microk8s.daemon-k8s-dqlite[2785183]: time="2023-11-15T16:18:39+05:30" level=error msg="failed to list /registry/poddisruptionbudgets/ for revision 574838"

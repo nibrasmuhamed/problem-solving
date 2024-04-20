@@ -1,0 +1,401 @@
+Oct 11 15:54:48 microk8s-vm systemd[1]: Started Service for snap application microk8s.daemon-apiserver-kicker.
+Oct 11 15:54:54 microk8s-vm microk8s.daemon-apiserver-kicker[3142]: Setting up the CNI
+Oct 11 15:55:01 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: poddisruptionbudget.policy/calico-kube-controllers created
+Oct 11 15:55:01 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: serviceaccount/calico-kube-controllers created
+Oct 11 15:55:01 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: serviceaccount/calico-node created
+Oct 11 15:55:01 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: configmap/calico-config created
+Oct 11 15:55:01 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: customresourcedefinition.apiextensions.k8s.io/bgpconfigurations.crd.projectcalico.org created
+Oct 11 15:55:01 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: customresourcedefinition.apiextensions.k8s.io/bgppeers.crd.projectcalico.org created
+Oct 11 15:55:01 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: customresourcedefinition.apiextensions.k8s.io/blockaffinities.crd.projectcalico.org created
+Oct 11 15:55:01 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: customresourcedefinition.apiextensions.k8s.io/caliconodestatuses.crd.projectcalico.org created
+Oct 11 15:55:01 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: customresourcedefinition.apiextensions.k8s.io/clusterinformations.crd.projectcalico.org created
+Oct 11 15:55:01 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: customresourcedefinition.apiextensions.k8s.io/felixconfigurations.crd.projectcalico.org created
+Oct 11 15:55:01 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: customresourcedefinition.apiextensions.k8s.io/globalnetworkpolicies.crd.projectcalico.org created
+Oct 11 15:55:01 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: customresourcedefinition.apiextensions.k8s.io/globalnetworksets.crd.projectcalico.org created
+Oct 11 15:55:01 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: customresourcedefinition.apiextensions.k8s.io/hostendpoints.crd.projectcalico.org created
+Oct 11 15:55:01 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: customresourcedefinition.apiextensions.k8s.io/ipamblocks.crd.projectcalico.org created
+Oct 11 15:55:01 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: customresourcedefinition.apiextensions.k8s.io/ipamconfigs.crd.projectcalico.org created
+Oct 11 15:55:01 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: customresourcedefinition.apiextensions.k8s.io/ipamhandles.crd.projectcalico.org created
+Oct 11 15:55:01 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: customresourcedefinition.apiextensions.k8s.io/ippools.crd.projectcalico.org created
+Oct 11 15:55:01 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: customresourcedefinition.apiextensions.k8s.io/ipreservations.crd.projectcalico.org created
+Oct 11 15:55:01 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: customresourcedefinition.apiextensions.k8s.io/kubecontrollersconfigurations.crd.projectcalico.org created
+Oct 11 15:55:01 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: customresourcedefinition.apiextensions.k8s.io/networkpolicies.crd.projectcalico.org created
+Oct 11 15:55:01 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: customresourcedefinition.apiextensions.k8s.io/networksets.crd.projectcalico.org created
+Oct 11 15:55:01 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: clusterrole.rbac.authorization.k8s.io/calico-kube-controllers created
+Oct 11 15:55:01 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: clusterrole.rbac.authorization.k8s.io/calico-node created
+Oct 11 15:55:02 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: clusterrolebinding.rbac.authorization.k8s.io/calico-kube-controllers created
+Oct 11 15:55:02 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: clusterrolebinding.rbac.authorization.k8s.io/calico-node created
+Oct 11 15:55:02 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: daemonset.apps/calico-node created
+Oct 11 15:55:02 microk8s-vm microk8s.daemon-apiserver-kicker[3334]: deployment.apps/calico-kube-controllers created
+Oct 11 15:55:03 microk8s-vm microk8s.daemon-apiserver-kicker[3362]: configmap/local-registry-hosting created
+Oct 19 12:14:40 microk8s-vm systemd[1]: Stopping Service for snap application microk8s.daemon-apiserver-kicker...
+Oct 19 12:14:40 microk8s-vm systemd[1]: snap.microk8s.daemon-apiserver-kicker.service: Deactivated successfully.
+Oct 19 12:14:40 microk8s-vm systemd[1]: Stopped Service for snap application microk8s.daemon-apiserver-kicker.
+Oct 19 12:14:40 microk8s-vm systemd[1]: snap.microk8s.daemon-apiserver-kicker.service: Consumed 1h 18min 36.138s CPU time.
+Oct 19 12:14:48 microk8s-vm systemd[1]: Started Service for snap application microk8s.daemon-apiserver-kicker.
+Oct 19 12:14:53 microk8s-vm microk8s.daemon-apiserver-kicker[3294170]: Reloading the calico CNI
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294369]: Reloading the calico CNI
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]: Name:           calico-node
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]: Selector:       k8s-app=calico-node
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]: Node-Selector:  kubernetes.io/os=linux
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]: Labels:         k8s-app=calico-node
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]: Annotations:    deprecated.daemonset.template.generation: 1
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]: Desired Number of Nodes Scheduled: 1
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]: Current Number of Nodes Scheduled: 1
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]: Number of Nodes Scheduled with Up-to-date Pods: 1
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]: Number of Nodes Scheduled with Available Pods: 1
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]: Number of Nodes Misscheduled: 0
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]: Pods Status:  1 Running / 0 Waiting / 0 Succeeded / 0 Failed
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]: Pod Template:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:   Labels:           k8s-app=calico-node
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:   Service Account:  calico-node
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:   Init Containers:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:    upgrade-ipam:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Image:      docker.io/calico/cni:v3.25.0
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Port:       <none>
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Host Port:  <none>
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Command:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       /opt/cni/bin/calico-ipam
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       -upgrade
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Environment Variables from:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       kubernetes-services-endpoint  ConfigMap  Optional: true
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Environment:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       KUBERNETES_NODE_NAME:        (v1:spec.nodeName)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       CALICO_NETWORKING_BACKEND:  <set to the key 'calico_backend' of config map 'calico-config'>  Optional: false
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Mounts:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       /host/opt/cni/bin from cni-bin-dir (rw)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       /var/lib/cni/networks from host-local-net-dir (rw)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:    install-cni:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Image:      docker.io/calico/cni:v3.25.0
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Port:       <none>
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Host Port:  <none>
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Command:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       /opt/cni/bin/install
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Environment Variables from:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       kubernetes-services-endpoint  ConfigMap  Optional: true
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Environment:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       CNI_CONF_NAME:         10-calico.conflist
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       CNI_NETWORK_CONFIG:    <set to the key 'cni_network_config' of config map 'calico-config'>  Optional: false
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       KUBERNETES_NODE_NAME:   (v1:spec.nodeName)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       CNI_MTU:               <set to the key 'veth_mtu' of config map 'calico-config'>  Optional: false
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       SLEEP:                 false
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       CNI_NET_DIR:           /var/snap/microk8s/current/args/cni-network
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Mounts:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       /host/etc/cni/net.d from cni-net-dir (rw)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       /host/opt/cni/bin from cni-bin-dir (rw)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:   Containers:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:    calico-node:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Image:      docker.io/calico/node:v3.25.0
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Port:       <none>
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Host Port:  <none>
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Requests:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       cpu:      250m
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Liveness:   exec [/bin/calico-node -felix-live] delay=10s timeout=10s period=10s #success=1 #failure=6
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Readiness:  exec [/bin/calico-node -felix-ready] delay=0s timeout=10s period=10s #success=1 #failure=3
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Environment Variables from:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       kubernetes-services-endpoint  ConfigMap  Optional: true
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Environment:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       DATASTORE_TYPE:                     kubernetes
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       WAIT_FOR_DATASTORE:                 true
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       NODENAME:                            (v1:spec.nodeName)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       CALICO_NETWORKING_BACKEND:          <set to the key 'calico_backend' of config map 'calico-config'>  Optional: false
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       CLUSTER_TYPE:                       k8s,bgp
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       IP:                                 autodetect
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       IP_AUTODETECTION_METHOD:            first-found
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       CALICO_IPV4POOL_VXLAN:              Always
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       CALICO_IPV6POOL_VXLAN:              Never
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       FELIX_IPINIPMTU:                    <set to the key 'veth_mtu' of config map 'calico-config'>  Optional: false
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       FELIX_VXLANMTU:                     <set to the key 'veth_mtu' of config map 'calico-config'>  Optional: false
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       FELIX_WIREGUARDMTU:                 <set to the key 'veth_mtu' of config map 'calico-config'>  Optional: false
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       CALICO_IPV4POOL_CIDR:               10.1.0.0/16
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       CALICO_DISABLE_FILE_LOGGING:        true
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       FELIX_DEFAULTENDPOINTTOHOSTACTION:  ACCEPT
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       FELIX_IPV6SUPPORT:                  false
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       FELIX_HEALTHENABLED:                true
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       FELIX_FEATUREDETECTOVERRIDE:        ChecksumOffloadBroken=true
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Mounts:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       /host/etc/cni/net.d from cni-net-dir (rw)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       /lib/modules from lib-modules (ro)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       /run/xtables.lock from xtables-lock (rw)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       /var/lib/calico from var-lib-calico (rw)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       /var/log/calico/cni from cni-log-dir (ro)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       /var/run/calico from var-run-calico (rw)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:       /var/run/nodeagent from policysync (rw)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:   Volumes:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:    lib-modules:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Type:          HostPath (bare host directory volume)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Path:          /lib/modules
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     HostPathType:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:    var-run-calico:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Type:          HostPath (bare host directory volume)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Path:          /var/snap/microk8s/current/var/run/calico
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     HostPathType:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:    var-lib-calico:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Type:          HostPath (bare host directory volume)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Path:          /var/snap/microk8s/current/var/lib/calico
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     HostPathType:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:    xtables-lock:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Type:          HostPath (bare host directory volume)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Path:          /run/xtables.lock
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     HostPathType:  FileOrCreate
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:    sys-fs:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Type:          HostPath (bare host directory volume)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Path:          /sys/fs/
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     HostPathType:  DirectoryOrCreate
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:    cni-bin-dir:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Type:          HostPath (bare host directory volume)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Path:          /var/snap/microk8s/current/opt/cni/bin
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     HostPathType:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:    cni-net-dir:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Type:          HostPath (bare host directory volume)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Path:          /var/snap/microk8s/current/args/cni-network
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     HostPathType:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:    cni-log-dir:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Type:          HostPath (bare host directory volume)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Path:          /var/snap/microk8s/common/var/log/calico/cni
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     HostPathType:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:    host-local-net-dir:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Type:          HostPath (bare host directory volume)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Path:          /var/snap/microk8s/current/var/lib/cni/networks
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     HostPathType:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:    policysync:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Type:               HostPath (bare host directory volume)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     Path:               /var/snap/microk8s/current/var/run/nodeagent
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:     HostPathType:       DirectoryOrCreate
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]:   Priority Class Name:  system-node-critical
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294381]: Events:                 <none>
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]: Name:               calico-kube-controllers
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]: Namespace:          kube-system
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]: CreationTimestamp:  Wed, 11 Oct 2023 15:55:02 +0530
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]: Labels:             k8s-app=calico-kube-controllers
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]: Annotations:        deployment.kubernetes.io/revision: 1
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]: Selector:           k8s-app=calico-kube-controllers
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]: Replicas:           1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]: StrategyType:       Recreate
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]: MinReadySeconds:    0
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]: Pod Template:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]:   Labels:           k8s-app=calico-kube-controllers
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]:   Service Account:  calico-kube-controllers
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]:   Containers:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]:    calico-kube-controllers:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]:     Image:      docker.io/calico/kube-controllers:v3.25.0
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]:     Port:       <none>
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]:     Host Port:  <none>
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]:     Liveness:   exec [/usr/bin/check-status -l] delay=10s timeout=10s period=10s #success=1 #failure=6
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]:     Readiness:  exec [/usr/bin/check-status -r] delay=0s timeout=1s period=10s #success=1 #failure=3
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]:     Environment:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]:       ENABLED_CONTROLLERS:  node
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]:       DATASTORE_TYPE:       kubernetes
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]:     Mounts:                 <none>
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]:   Volumes:                  <none>
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]:   Priority Class Name:      system-cluster-critical
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]: Conditions:
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]:   Type           Status  Reason
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]:   ----           ------  ------
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]:   Available      True    MinimumReplicasAvailable
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]:   Progressing    True    NewReplicaSetAvailable
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]: OldReplicaSets:  <none>
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]: NewReplicaSet:   calico-kube-controllers-6c99c8747f (1/1 replicas created)
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294392]: Events:          <none>
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294403]: daemonset.apps/calico-node restarted
+Oct 19 12:15:09 microk8s-vm microk8s.daemon-apiserver-kicker[3294415]: deployment.apps/calico-kube-controllers restarted
+-- Boot 5bc4623b22d948e5a5475800c9e3ac28 --
+Oct 20 12:34:24 microk8s-vm systemd[1]: Started Service for snap application microk8s.daemon-apiserver-kicker.
+Oct 20 12:34:33 microk8s-vm microk8s.daemon-apiserver-kicker[1405]: Signature ok
+Oct 20 12:34:33 microk8s-vm microk8s.daemon-apiserver-kicker[1405]: subject=C = GB, ST = Canonical, L = Canonical, O = Canonical, OU = Canonical, CN = 127.0.0.1
+Oct 20 12:34:33 microk8s-vm microk8s.daemon-apiserver-kicker[1405]: Getting CA Private Key
+Oct 20 12:34:33 microk8s-vm microk8s.daemon-apiserver-kicker[1410]: Signature ok
+Oct 20 12:34:33 microk8s-vm microk8s.daemon-apiserver-kicker[1410]: subject=CN = front-proxy-client
+Oct 20 12:34:33 microk8s-vm microk8s.daemon-apiserver-kicker[1410]: Getting CA Private Key
+Oct 20 12:34:33 microk8s-vm microk8s.daemon-apiserver-kicker[707]: cert change detected. Restarting the cluster-agent
+Oct 20 12:34:33 microk8s-vm microk8s.daemon-apiserver-kicker[707]: cert change detected. Reconfiguring the kube-apiserver
+Oct 20 12:34:34 microk8s-vm sudo[1469]:     root : PWD=/var/snap/microk8s/6072 ; USER=root ; ENV=LD_LIBRARY_PATH=/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void:/snap/microk8s/6072/lib:/snap/microk8s/6072/usr/lib:/snap/microk8s/6072/lib/aarch64-linux-gnu:/snap/microk8s/6072/usr/lib/aarch64-linux-gnu ; COMMAND=/usr/bin/systemctl kill snap.microk8s.daemon-kubelite.service --signal=SIGKILL
+Oct 20 12:34:34 microk8s-vm sudo[1469]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Oct 20 12:34:34 microk8s-vm sudo[1469]: pam_unix(sudo:session): session closed for user root
+Oct 20 12:34:34 microk8s-vm sudo[1475]:     root : PWD=/var/snap/microk8s/6072 ; USER=root ; ENV=LD_LIBRARY_PATH=/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void:/snap/microk8s/6072/lib:/snap/microk8s/6072/usr/lib:/snap/microk8s/6072/lib/aarch64-linux-gnu:/snap/microk8s/6072/usr/lib/aarch64-linux-gnu ; COMMAND=/usr/bin/systemctl kill snap.microk8s.daemon-containerd.service --signal=SIGKILL
+Oct 20 12:34:34 microk8s-vm sudo[1475]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Oct 20 12:34:34 microk8s-vm sudo[1475]: pam_unix(sudo:session): session closed for user root
+Oct 20 12:34:35 microk8s-vm sudo[1635]:     root : PWD=/var/snap/microk8s/6072 ; USER=root ; ENV=LD_LIBRARY_PATH=/snap/microk8s/6072/lib:/snap/microk8s/6072/usr/lib:/snap/microk8s/6072/lib/aarch64-linux-gnu:/snap/microk8s/6072/usr/lib/aarch64-linux-gnu CONTAINERD_SNAPSHOTTER=overlayfs ; COMMAND=/snap/microk8s/6072/bin/ctr --address=/var/snap/microk8s/common/run/containerd.sock --namespace k8s.io task ls
+Oct 20 12:34:35 microk8s-vm sudo[1635]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Oct 20 12:34:36 microk8s-vm sudo[1635]: pam_unix(sudo:session): session closed for user root
+Oct 22 13:41:35 microk8s-vm systemd[1]: Stopping Service for snap application microk8s.daemon-apiserver-kicker...
+Oct 22 13:41:35 microk8s-vm systemd[1]: snap.microk8s.daemon-apiserver-kicker.service: Deactivated successfully.
+Oct 22 13:41:35 microk8s-vm systemd[1]: Stopped Service for snap application microk8s.daemon-apiserver-kicker.
+Oct 22 13:41:35 microk8s-vm systemd[1]: snap.microk8s.daemon-apiserver-kicker.service: Consumed 9min 45.518s CPU time.
+-- Boot 033baa807a4541fa8f6e1919c5e82879 --
+Nov 02 16:11:21 microk8s-vm systemd[1]: Started Service for snap application microk8s.daemon-apiserver-kicker.
+Nov 07 15:55:43 microk8s-vm microk8s.daemon-apiserver-kicker[1581863]: chmod: cannot access '/var/snap/microk8s/6072/var/kubernetes/backend/0000000001393665-0000000001394017': No such file or directory
+Nov 08 12:03:20 microk8s-vm microk8s.daemon-apiserver-kicker[1923084]: chgrp: changing group of '/var/snap/microk8s/6072/var/kubernetes/backend/tmp-snapshot-1-1482752-78921443.meta': No such file or directory
+Nov 09 11:47:43 microk8s-vm microk8s.daemon-apiserver-kicker[2277114]: chmod: cannot access '/var/snap/microk8s/6072/var/kubernetes/backend/tmp-snapshot-1-1564672-93919846.meta': No such file or directory
+Nov 11 22:52:16 microk8s-vm systemd[1]: Stopping Service for snap application microk8s.daemon-apiserver-kicker...
+Nov 11 22:52:16 microk8s-vm systemd[1]: snap.microk8s.daemon-apiserver-kicker.service: Deactivated successfully.
+Nov 11 22:52:16 microk8s-vm systemd[1]: Stopped Service for snap application microk8s.daemon-apiserver-kicker.
+Nov 11 22:52:16 microk8s-vm systemd[1]: snap.microk8s.daemon-apiserver-kicker.service: Consumed 1h 12min 12.432s CPU time.
+Nov 11 22:52:35 microk8s-vm systemd[1]: Started Service for snap application microk8s.daemon-apiserver-kicker.
+Nov 11 23:10:33 microk8s-vm microk8s.daemon-apiserver-kicker[2785797]: Reloading the calico CNI
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]: Name:           calico-node
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]: Selector:       k8s-app=calico-node
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]: Node-Selector:  kubernetes.io/os=linux
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]: Labels:         k8s-app=calico-node
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]: Annotations:    deprecated.daemonset.template.generation: 2
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]: Desired Number of Nodes Scheduled: 1
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]: Current Number of Nodes Scheduled: 1
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]: Number of Nodes Scheduled with Up-to-date Pods: 1
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]: Number of Nodes Scheduled with Available Pods: 1
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]: Number of Nodes Misscheduled: 0
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]: Pods Status:  1 Running / 0 Waiting / 0 Succeeded / 0 Failed
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]: Pod Template:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:   Labels:           k8s-app=calico-node
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:   Annotations:      kubectl.kubernetes.io/restartedAt: 2023-10-19T12:15:09+05:30
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:   Service Account:  calico-node
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:   Init Containers:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:    upgrade-ipam:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Image:      docker.io/calico/cni:v3.25.0
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Port:       <none>
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Host Port:  <none>
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Command:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       /opt/cni/bin/calico-ipam
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       -upgrade
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Environment Variables from:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       kubernetes-services-endpoint  ConfigMap  Optional: true
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Environment:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       KUBERNETES_NODE_NAME:        (v1:spec.nodeName)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       CALICO_NETWORKING_BACKEND:  <set to the key 'calico_backend' of config map 'calico-config'>  Optional: false
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Mounts:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       /host/opt/cni/bin from cni-bin-dir (rw)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       /var/lib/cni/networks from host-local-net-dir (rw)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:    install-cni:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Image:      docker.io/calico/cni:v3.25.0
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Port:       <none>
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Host Port:  <none>
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Command:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       /opt/cni/bin/install
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Environment Variables from:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       kubernetes-services-endpoint  ConfigMap  Optional: true
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Environment:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       CNI_CONF_NAME:         10-calico.conflist
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       CNI_NETWORK_CONFIG:    <set to the key 'cni_network_config' of config map 'calico-config'>  Optional: false
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       KUBERNETES_NODE_NAME:   (v1:spec.nodeName)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       CNI_MTU:               <set to the key 'veth_mtu' of config map 'calico-config'>  Optional: false
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       SLEEP:                 false
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       CNI_NET_DIR:           /var/snap/microk8s/current/args/cni-network
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Mounts:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       /host/etc/cni/net.d from cni-net-dir (rw)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       /host/opt/cni/bin from cni-bin-dir (rw)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:   Containers:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:    calico-node:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Image:      docker.io/calico/node:v3.25.0
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Port:       <none>
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Host Port:  <none>
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Requests:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       cpu:      250m
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Liveness:   exec [/bin/calico-node -felix-live] delay=10s timeout=10s period=10s #success=1 #failure=6
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Readiness:  exec [/bin/calico-node -felix-ready] delay=0s timeout=10s period=10s #success=1 #failure=3
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Environment Variables from:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       kubernetes-services-endpoint  ConfigMap  Optional: true
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Environment:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       DATASTORE_TYPE:                     kubernetes
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       WAIT_FOR_DATASTORE:                 true
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       NODENAME:                            (v1:spec.nodeName)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       CALICO_NETWORKING_BACKEND:          <set to the key 'calico_backend' of config map 'calico-config'>  Optional: false
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       CLUSTER_TYPE:                       k8s,bgp
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       IP:                                 autodetect
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       IP_AUTODETECTION_METHOD:            first-found
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       CALICO_IPV4POOL_VXLAN:              Always
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       CALICO_IPV6POOL_VXLAN:              Never
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       FELIX_IPINIPMTU:                    <set to the key 'veth_mtu' of config map 'calico-config'>  Optional: false
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       FELIX_VXLANMTU:                     <set to the key 'veth_mtu' of config map 'calico-config'>  Optional: false
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       FELIX_WIREGUARDMTU:                 <set to the key 'veth_mtu' of config map 'calico-config'>  Optional: false
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       CALICO_IPV4POOL_CIDR:               10.1.0.0/16
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       CALICO_DISABLE_FILE_LOGGING:        true
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       FELIX_DEFAULTENDPOINTTOHOSTACTION:  ACCEPT
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       FELIX_IPV6SUPPORT:                  false
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       FELIX_HEALTHENABLED:                true
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       FELIX_FEATUREDETECTOVERRIDE:        ChecksumOffloadBroken=true
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Mounts:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       /host/etc/cni/net.d from cni-net-dir (rw)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       /lib/modules from lib-modules (ro)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       /run/xtables.lock from xtables-lock (rw)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       /var/lib/calico from var-lib-calico (rw)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       /var/log/calico/cni from cni-log-dir (ro)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       /var/run/calico from var-run-calico (rw)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:       /var/run/nodeagent from policysync (rw)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:   Volumes:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:    lib-modules:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Type:          HostPath (bare host directory volume)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Path:          /lib/modules
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     HostPathType:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:    var-run-calico:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Type:          HostPath (bare host directory volume)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Path:          /var/snap/microk8s/current/var/run/calico
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     HostPathType:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:    var-lib-calico:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Type:          HostPath (bare host directory volume)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Path:          /var/snap/microk8s/current/var/lib/calico
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     HostPathType:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:    xtables-lock:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Type:          HostPath (bare host directory volume)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Path:          /run/xtables.lock
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     HostPathType:  FileOrCreate
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:    sys-fs:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Type:          HostPath (bare host directory volume)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Path:          /sys/fs/
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     HostPathType:  DirectoryOrCreate
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:    cni-bin-dir:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Type:          HostPath (bare host directory volume)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Path:          /var/snap/microk8s/current/opt/cni/bin
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     HostPathType:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:    cni-net-dir:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Type:          HostPath (bare host directory volume)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Path:          /var/snap/microk8s/current/args/cni-network
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     HostPathType:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:    cni-log-dir:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Type:          HostPath (bare host directory volume)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Path:          /var/snap/microk8s/common/var/log/calico/cni
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     HostPathType:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:    host-local-net-dir:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Type:          HostPath (bare host directory volume)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Path:          /var/snap/microk8s/current/var/lib/cni/networks
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     HostPathType:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:    policysync:
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Type:               HostPath (bare host directory volume)
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     Path:               /var/snap/microk8s/current/var/run/nodeagent
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:     HostPathType:       DirectoryOrCreate
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]:   Priority Class Name:  system-node-critical
+Nov 11 23:10:44 microk8s-vm microk8s.daemon-apiserver-kicker[2785825]: Events:                 <none>
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]: Name:               calico-kube-controllers
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]: Namespace:          kube-system
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]: CreationTimestamp:  Wed, 11 Oct 2023 15:55:02 +0530
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]: Labels:             k8s-app=calico-kube-controllers
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]: Annotations:        deployment.kubernetes.io/revision: 2
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]: Selector:           k8s-app=calico-kube-controllers
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]: Replicas:           1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]: StrategyType:       Recreate
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]: MinReadySeconds:    0
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]: Pod Template:
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]:   Labels:           k8s-app=calico-kube-controllers
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]:   Annotations:      kubectl.kubernetes.io/restartedAt: 2023-10-19T12:15:09+05:30
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]:   Service Account:  calico-kube-controllers
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]:   Containers:
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]:    calico-kube-controllers:
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]:     Image:      docker.io/calico/kube-controllers:v3.25.0
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]:     Port:       <none>
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]:     Host Port:  <none>
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]:     Liveness:   exec [/usr/bin/check-status -l] delay=10s timeout=10s period=10s #success=1 #failure=6
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]:     Readiness:  exec [/usr/bin/check-status -r] delay=0s timeout=1s period=10s #success=1 #failure=3
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]:     Environment:
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]:       ENABLED_CONTROLLERS:  node
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]:       DATASTORE_TYPE:       kubernetes
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]:     Mounts:                 <none>
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]:   Volumes:                  <none>
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]:   Priority Class Name:      system-cluster-critical
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]: Conditions:
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]:   Type           Status  Reason
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]:   ----           ------  ------
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]:   Progressing    True    NewReplicaSetAvailable
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]:   Available      True    MinimumReplicasAvailable
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]: OldReplicaSets:  calico-kube-controllers-6c99c8747f (0/0 replicas created)
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]: NewReplicaSet:   calico-kube-controllers-65dfc97bb5 (1/1 replicas created)
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785927]: Events:          <none>
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785943]: daemonset.apps/calico-node restarted
+Nov 11 23:10:45 microk8s-vm microk8s.daemon-apiserver-kicker[2785957]: deployment.apps/calico-kube-controllers restarted

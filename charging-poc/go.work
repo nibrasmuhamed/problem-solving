@@ -1,0 +1,9 @@
+go 1.21.3
+
+use (
+	./casbin
+	./inhouse
+	./opa
+	./distCache
+	./distributed-lb
+)
