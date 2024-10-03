@@ -1,4 +1,4 @@
-go 1.22.0
+go 1.22.1
 
 use (
 	./backtrack
@@ -17,6 +17,7 @@ use (
 	./prototype
 	./queue
 	./search
+	./snakeladder
 	./sorting
 	./stack
 	./tree

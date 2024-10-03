@@ -10,9 +10,74 @@ import (
 	"log"
 	"math"
 	"net/http"
+	"os"
+	"os/signal"
 	"sync"
+	"syscall"
 	"time"
+	"unsafe"
 )
+
+type Product struct {
+	InStock  bool    // 1 byte
+	Cost     float64 // 8 bytes
+	Quantity int32   // 4 bytes
+}
+
+// Optimized struct - minimum padding
+type OptimizedProduct struct {
+	Cost     float64 // 8 bytes
+	Quantity int32   // 4 bytes
+	InStock  bool    // 1 byte
+}
+
+func main() {
+	product := Product{}
+	optimizedProduct := OptimizedProduct{}
+	//log here
+	fmt.Printf("size of product struct: %d bytes\n", unsafe.Sizeof(product))
+	// size of product struct: 24 bytes
+
+	fmt.Printf("size of optimized product struct: %d bytes\n", unsafe.Sizeof(optimizedProduct))
+	// size of optimized product struct: 16 bytes
+}
+func mainSignals() {
+	// Create a channel to receive OS signals
+	pid := os.Getpid()
+	fmt.Printf("PID: %d\n", pid)
+	sigCh := make(chan os.Signal, 1)
+	signal.Notify(sigCh, syscall.SIGINT, syscall.SIGTERM, syscall.SIGQUIT)
+
+	// Create a channel to wait for program termination
+	done := make(chan bool, 1)
+
+	// Create a goroutine to handle signals
+	go func() {
+		// Wait for a signal
+		sig := <-sigCh
+		fmt.Printf("Received signal: %v\n", sig)
+
+		// Handle the signal
+		switch sig {
+		case syscall.SIGINT:
+			fmt.Println("Received SIGINT. Exiting gracefully...")
+		case syscall.SIGTERM:
+			fmt.Println("Received SIGTERM. Exiting gracefully...")
+		case syscall.SIGQUIT:
+			fmt.Println("SIGQUIT")
+		}
+
+		// Notify main goroutine that it can exit
+		done <- true
+	}()
+
+	// Your application logic goes here
+	// For example, you can run your server or perform other tasks
+	// ...
+
+	// Block the main goroutine until a signal is received
+	<-done
+}
 
 func sseClient() {
 	url := "http://localhost:8080/events?watch=true"
@@ -233,7 +298,7 @@ func hashString(s string) int {
 
 var times int
 
-func main() {
+func mains() {
 	// k8sdata()
 	maxInt32 := int32(2147483647)
 
