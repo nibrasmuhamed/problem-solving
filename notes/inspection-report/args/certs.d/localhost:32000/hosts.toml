@@ -1,5 +1,0 @@
-server = "http://localhost:32000"
-
-[host."http://localhost:32000"]
-  capabilities = ["pull", "resolve"]
-

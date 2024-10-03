@@ -1,5 +1,0 @@
-NAMESPACE            NAME                   STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS           AGE
-container-registry   registry-claim         Bound    pvc-1fd38cc2-2a89-4656-8cbb-6979fe123310   20Gi       RWX            microk8s-hostpath      35d
-default              config-pv-claim        Bound    config-pv-volume                           1Gi        RWO            manual                 35d
-default              mongodb-pvc            Bound    mongodb-pv                                 2Gi        RWO            mongodb-storageclass   13d
-default              config-pv-claim-nchf   Bound    config-pv-volume-nchf                      1Gi        RWO            manual                 12d

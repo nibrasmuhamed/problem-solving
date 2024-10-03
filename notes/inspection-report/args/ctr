@@ -1,2 +1,0 @@
---address=${SNAP_COMMON}/run/containerd.sock
---namespace k8s.io

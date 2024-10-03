@@ -1,6 +1,0 @@
-Name                       Version        Rev    Tracking       Publisher    Notes
-core20                     20230801       2019   latest/stable  canonical**  base
-lxd                        5.0.2-838e1b2  24326  5.0/stable/…   canonical**  -
-microk8s                   v1.27.7        6114   1.27/stable    canonical**  classic
-microk8s-integrator-macos  0.1            2      latest/stable  canonical**  -
-snapd                      2.60.4         20298  latest/stable  canonical**  snapd
